@@ -1,0 +1,104 @@
+[
+  // planetTypes
+  { "op" : "replace", "path" : "/planetTypes/forest/layers/surface/dungeons", "value" : [[1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"], [1.0, "humanprison"], [1.0, "humancamp"], [1.0, "glitchsewer"]] },
+  { "op" : "replace", "path" : "/planetTypes/desert/layers/surface/dungeons", "value" : [[1.0, "aviannativevillage"],  [1.0, "avianairship"], [1.0, "humanprison"], [1.0, "humancamp"], [1.0, "glitchsewer"], [1.0, "novakidvillage"]] },
+  { "op" : "replace", "path" : "/planetTypes/savannah/layers/surface/dungeons", "value" : [[1.0, "aviannativevillage"],  [1.0, "avianairship"], [1.0, "humanprison"], [1.0, "humancamp"], [1.0, "glitchsewer"], [1.0, "novakidvillage"]] },
+  { "op" : "replace", "path" : "/planetTypes/snow/layers/surface/dungeons", "value" : [[1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"], [1.0, "humanprison"], [1.0, "humancamp"], [1.0, "glitchsewer"], [1.0, "novakidvillage"]] },
+  { "op" : "replace", "path" : "/planetTypes/jungle/layers/surface/dungeons", "value" : [[1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "humanprison"], [1.0, "humancamp"], [1.0, "glitchsewer"]] },
+  { "op" : "replace", "path" : "/planetTypes/alien/layers/surface/dungeons", "value" : [[1.0, "apextestfacility"], [1.0, "humanprison"], [1.0, "glitchsewer"]] },
+  { "op" : "replace", "path" : "/planetTypes/tundra/layers/surface/dungeons", "value" : [[1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"], [1.0, "humanprison"], [1.0, "glitchsewer"]] },
+  { "op" : "replace", "path" : "/planetTypes/midnight/layers/surface/dungeons", "value" : [[1.0, "apextestfacility"], [1.0, "humanprison"], [1.0, "glitchsewer"]] },
+  { "op" : "replace", "path" : "/planetTypes/volcanic/layers/surface/dungeons", "value" : [[4.0, "dungeoncrawler"], [4.0, "evilfortress"], [4.0, "glitchcastle"], [4.0, "glitchvillage"], [1.0, "humanprison"], [1.0, "glitchsewer"]] },
+  { "op" : "replace", "path" : "/planetTypes/scorchedcity/layers/surface/dungeons", "value" : [[1.0, "apextestfacility"], [1.0, "humanprison"], [1.0, "glitchsewer"]] },
+  { "op" : "add", "path" : "/planetTypes/cefrozenbarren", "value" : {
+      "threatRange" : [1, 1],
+      "layers" : {
+        "surface" : {
+          "primaryRegion" : ["cefrozenbarren"]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["cefrozenbarrenunderground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["cefrozenbarrenunderground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["cefrozenbarrenunderground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["cefrozenbarrenunderground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["cefrozenbarrenunderground"]
+        }
+      }
+    }
+  },
+  { "op" : "add", "path" : "/planetTypes/cemoltenbarren", "value" : {
+      "threatRange" : [1, 1],
+      "layers" : {
+        "surface" : {
+          "primaryRegion" : ["cemoltenbarren"]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["cemoltenbarrenunderground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["cemoltenbarrenunderground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["cemoltenbarrenunderground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["cemoltenbarrenunderground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["cemoltenbarrenunderground"]
+        }
+      }
+    }
+  },
+
+  // regionTypes
+  { "op" : "add", "path" : "/regionTypes/cefrozenbarren", "value" : {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "cefrozenbarren" ]]
+      ]
+    }
+  },
+  { "op" : "add", "path" : "/regionTypes/cemoltenbarren", "value" : {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "cemoltenbarren" ]]
+      ]
+    }
+  },
+
+  { "op" : "add", "path" : "/regionTypes/cefrozenbarrenunderground", "value" : {
+      "fgCaveSelector" : [ "empty" ],
+      "caveLiquid" : [ ],
+      "biome" : [
+        [0, [ "cefrozenbarrenunderground"]]
+      ]
+    }
+  },
+  { "op" : "add", "path" : "/regionTypes/cemoltenbarrenunderground", "value" : {
+      "fgCaveSelector" : [ "empty" ],
+      "caveLiquid" : [ ],
+      "biome" : [
+        [0, [ "cemoltenbarrenunderground"]]
+      ]
+    }
+  }
+]

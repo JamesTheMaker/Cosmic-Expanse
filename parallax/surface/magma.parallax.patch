@@ -1,0 +1,9 @@
+[
+  { "op" : "add", "path" : "/layers/-", "value" : {
+      "kind" : "lavaisland",
+      "offset" : [0, 290],
+      "parallax" : [2.9, 1.18],
+      "unlit" : true
+    } 
+  }
+]

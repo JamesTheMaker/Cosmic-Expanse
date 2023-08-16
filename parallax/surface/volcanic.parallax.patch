@@ -1,0 +1,11 @@
+[
+  { "op" : "add", "path" : "/layers/-", "value" : {
+      "kind" : "volcanic1unlit",
+      "offset" : [100, 400],
+      "noRandomOffset" : true,
+      "parallax" : [3, 3.502],
+      "nohueshift" : true,
+      "unlit" : true
+    }
+  }
+]

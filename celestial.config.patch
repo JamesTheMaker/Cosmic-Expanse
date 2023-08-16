@@ -1,0 +1,437 @@
+[
+  // terrestrialGraphics
+  {
+    "op" : "add", "path" : "/terrestrialGraphics/cefrozenbarren", "value" : {
+      "baseImages" : "/celestial/system/terrestrial/biomes/tundra/maskie<num>.png"
+    }
+  },
+  {
+    "op" : "add", "path" : "/terrestrialGraphics/cemoltenbarren", "value" : {
+      "baseImages" : "/celestial/system/terrestrial/biomes/scorchedcity/maskie<num>.png"
+    }
+  },
+
+  // terrestrialHorizonGraphics
+  { "op" : "add", "path" : "/terrestrialHorizonGraphics/cefrozenbarren", "value" : {
+      "baseImages" : "/celestial/system/terrestrial/horizon/textures/tundra_<selector>.png",
+      "maskPerPlanetRange" : [0, 0]
+    } 
+  },
+  { "op" : "add", "path" : "/terrestrialHorizonGraphics/cemoltenbarren", "value" : {
+      "baseImages" : "/celestial/system/terrestrial/horizon/textures/scorchedcity_<selector>.png",
+      "maskPerPlanetRange" : [0, 0]
+    } 
+  },
+
+  // systemTypes
+  { "op" : "replace", "path" : "/systemTypes/White/orbitRegions", "value" : [
+      {
+        "regionName" : "Tier1Inner",
+        "orbitRange" : [1, 4],
+        "bodyProbability" : 0.5,
+        "planetaryTypes" : [
+          {"weight" : 0.2, "item" : "Barren"},
+          {"weight" : 0.2, "item" : "ceMoltenBarren"},
+          {"weight" : 0.1, "item" : "AsteroidField"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"}
+        ]
+      },
+      {
+        "regionName" : "Tier1Habitable",
+        "orbitRange" : [5, 6],
+        "bodyProbability" : 0.25,
+        "planetaryTypes" : [
+          {"weight" : 0.2, "item" : "Tier1"},
+          {"weight" : 0.7, "item" : "Tier2"},
+          {"weight" : 0.05, "item" : "Barren"},
+          {"weight" : 0.05, "item" : "ceFrozenBarren"},
+          {"weight" : 0.05, "item" : "CeMoltenBarren"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"}
+        ]
+      },
+      {
+        "regionName" : "Tier1HabitableGasGiant",
+        "orbitRange" : [7, 7],
+        "bodyProbability" : 0.25,
+        "planetaryTypes" : [
+          {"weight" : 0.1, "item" : "Barren"},
+          {"weight" : 0.2, "item" : "GasGiant"},
+          {"weight" : 0.05, "item" : "AsteroidField"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"},
+          {"weight" : 0.2, "item" : "Tier1"},
+          {"weight" : 0.7, "item" : "Tier2"}
+        ]
+      },
+      {
+        "regionName" : "Tier1Outer",
+        "orbitRange" : [8, 10],
+        "bodyProbability" : 0.5,
+        "planetaryTypes" : [
+          {"weight" : 0.2, "item" : "Barren"},
+          {"weight" : 0.2, "item" : "ceFrozenBarren"},
+          {"weight" : 0.4, "item" : "GasGiant"},
+          {"weight" : 0.05, "item" : "AsteroidField"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"}
+        ]
+      },
+      {
+        "regionName" : "Gate",
+        "orbitRange" : [11, 11],
+        "bodyProbability" : 1.0,
+        "planetaryTypes" : [
+          {"weight" : 0.2, "item" : "AncientGateway"},
+          {"weight" : 0.1, "item" : "AsteroidField"},
+          {"weight" : 0.1, "item" : "ceFrozenBarren"}
+        ],
+        "satelliteTypes" : []
+      }
+    ] 
+  },
+  { "op" : "replace", "path" : "/systemTypes/Orange/orbitRegions", "value" : [
+      {
+        "regionName" : "Tier3Inner",
+        "orbitRange" : [1, 5],
+        "bodyProbability" : 0.5,
+        "planetaryTypes" : [
+          {"weight" : 0.2, "item" : "Barren"},
+          {"weight" : 0.2, "item" : "ceMoltenBarren"},
+          {"weight" : 0.1, "item" : "AsteroidField"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"}
+        ]
+      },
+      {
+        "regionName" : "Tier3Habitable",
+        "orbitRange" : [6, 7],
+        "bodyProbability" : 0.25,
+        "planetaryTypes" : [
+          {"weight" : 0.05, "item" : "Tier1"},
+          {"weight" : 0.2, "item" : "Tier2"},
+          {"weight" : 0.7, "item" : "Tier3"},
+          {"weight" : 0.05, "item" : "Barren"},
+          {"weight" : 0.05, "item" : "ceFrozenBarren"},
+          {"weight" : 0.05, "item" : "CeMoltenBarren"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"}
+        ]
+      },
+      {
+        "regionName" : "Tier3HabitableGasGiant",
+        "orbitRange" : [8, 8],
+        "bodyProbability" : 0.25,
+        "planetaryTypes" : [
+          {"weight" : 0.1, "item" : "Barren"},
+          {"weight" : 0.2, "item" : "GasGiant"},
+          {"weight" : 0.05, "item" : "AsteroidField"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"},
+          {"weight" : 0.05, "item" : "Tier1"},
+          {"weight" : 0.2, "item" : "Tier2"},
+          {"weight" : 0.7, "item" : "Tier3"}
+        ]
+      },
+      {
+        "regionName" : "Tier3Outer",
+        "orbitRange" : [9, 10],
+        "bodyProbability" : 0.5,
+        "planetaryTypes" : [
+          {"weight" : 0.2, "item" : "Barren"},
+          {"weight" : 0.2, "item" : "ceFrozenBarren"},
+          {"weight" : 0.4, "item" : "GasGiant"},
+          {"weight" : 0.05, "item" : "AsteroidField"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"}
+        ]
+      },
+      {
+        "regionName" : "Gate",
+        "orbitRange" : [11, 11],
+        "bodyProbability" : 1.0,
+        "planetaryTypes" : [
+          {"weight" : 0.2, "item" : "AncientGateway"},
+          {"weight" : 0.1, "item" : "AsteroidField"},
+          {"weight" : 0.1, "item" : "ceFrozenBarren"}
+        ],
+        "satelliteTypes" : []
+      }
+    ] 
+  },
+  { "op" : "replace", "path" : "/systemTypes/Yellow/orbitRegions", "value" : [
+      {
+        "regionName" : "Tier4Inner",
+        "orbitRange" : [1, 5],
+        "bodyProbability" : 0.5,
+        "planetaryTypes" : [
+          {"weight" : 0.2, "item" : "Barren"},
+          {"weight" : 0.2, "item" : "ceMoltenBarren"},
+          {"weight" : 0.1, "item" : "AsteroidField"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"}
+        ]
+      },
+      {
+        "regionName" : "Tier4Habitable",
+        "orbitRange" : [6, 7],
+        "bodyProbability" : 0.25,
+        "planetaryTypes" : [
+          {"weight" : 1.0, "item" : "Tier4"},
+          {"weight" : 0.05, "item" : "Barren"},
+          {"weight" : 0.05, "item" : "CeMoltenBarren"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"}
+        ]
+      },
+      {
+        "regionName" : "Tier4HabitableGasGiant",
+        "orbitRange" : [8, 8],
+        "bodyProbability" : 0.25,
+        "planetaryTypes" : [
+          {"weight" : 0.1, "item" : "Barren"},
+          {"weight" : 0.2, "item" : "GasGiant"},
+          {"weight" : 0.05, "item" : "AsteroidField"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"},
+          {"weight" : 1, "item" : "Tier4"}
+        ]
+      },
+      {
+        "regionName" : "Tier4Outer",
+        "orbitRange" : [9, 10],
+        "bodyProbability" : 0.5,
+        "planetaryTypes" : [
+          {"weight" : 0.2, "item" : "Barren"},
+          {"weight" : 0.2, "item" : "ceFrozenBarren"},
+          {"weight" : 0.4, "item" : "GasGiant"},
+          {"weight" : 0.05, "item" : "AsteroidField"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"}
+        ]
+      },
+      {
+        "regionName" : "Gate",
+        "orbitRange" : [11, 11],
+        "bodyProbability" : 1.0,
+        "planetaryTypes" : [
+          {"weight" : 0.2, "item" : "AncientGateway"},
+          {"weight" : 0.1, "item" : "AsteroidField"},
+          {"weight" : 0.1, "item" : "ceFrozenBarren"}
+        ],
+        "satelliteTypes" : []
+      }
+    ] 
+  },
+  { "op" : "replace", "path" : "/systemTypes/Blue/orbitRegions", "value" : [
+      {
+        "regionName" : "Tier5Inner",
+        "orbitRange" : [1, 5],
+        "bodyProbability" : 0.5,
+        "planetaryTypes" : [
+          {"weight" : 0.1, "item" : "Barren"},
+          {"weight" : 0.3, "item" : "ceFrozenBarren"},
+          {"weight" : 0.1, "item" : "AsteroidField"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"}
+        ]
+      },
+      {
+        "regionName" : "Tier5Habitable",
+        "orbitRange" : [6, 7],
+        "bodyProbability" : 0.25,
+        "planetaryTypes" : [
+          {"weight" : 1, "item" : "Tier5"},
+          {"weight" : 0.1, "item" : "CeFrozenBarren"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"}
+        ]
+      },
+      {
+        "regionName" : "Tier5HabitableGasGiant",
+        "orbitRange" : [8, 8],
+        "bodyProbability" : 0.25,
+        "planetaryTypes" : [
+          {"weight" : 0.05, "item" : "Barren"},
+          {"weight" : 0.05, "item" : "ceFrozenBarren"},
+          {"weight" : 0.2, "item" : "GasGiant"},
+          {"weight" : 0.05, "item" : "AsteroidField"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"},
+          {"weight" : 1, "item" : "Tier5"}
+        ]
+      },
+      {
+        "regionName" : "Tier5Outer",
+        "orbitRange" : [9, 10],
+        "bodyProbability" : 0.5,
+        "planetaryTypes" : [
+          {"weight" : 0.2, "item" : "Barren"},
+          {"weight" : 0.2, "item" : "ceFrozenBarren"},
+          {"weight" : 0.4, "item" : "GasGiant"},
+          {"weight" : 0.05, "item" : "AsteroidField"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"}
+        ]
+      },
+      {
+        "regionName" : "Gate",
+        "orbitRange" : [11, 11],
+        "bodyProbability" : 1.0,
+        "planetaryTypes" : [
+          {"weight" : 0.2, "item" : "AncientGateway"},
+          {"weight" : 0.1, "item" : "AsteroidField"},
+          {"weight" : 0.1, "item" : "ceFrozenBarren"}
+        ],
+        "satelliteTypes" : []
+      }
+    ] 
+  },
+  { "op" : "replace", "path" : "/systemTypes/Red/orbitRegions", "value" : [
+      {
+        "regionName" : "Tier6Inner",
+        "orbitRange" : [1, 5],
+        "bodyProbability" : 0.5,
+        "planetaryTypes" : [
+          {"weight" : 0.1, "item" : "Barren"},
+          {"weight" : 0.3, "item" : "ceMoltenBarren"},
+          {"weight" : 0.1, "item" : "AsteroidField"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"}
+        ]
+      },
+      {
+        "regionName" : "Tier6Habitable",
+        "orbitRange" : [6, 7],
+        "bodyProbability" : 0.25,
+        "planetaryTypes" : [
+          {"weight" : 1, "item" : "Tier6"},
+          {"weight" : 0.1, "item" : "ceMoltenBarren"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"}
+        ]
+      },
+      {
+        "regionName" : "Tier6HabitableGasGiant",
+        "orbitRange" : [8, 8],
+        "bodyProbability" : 0.25,
+        "planetaryTypes" : [
+          {"weight" : 0.05, "item" : "Barren"},
+          {"weight" : 0.05, "item" : "ceMoltenBarren"},
+          {"weight" : 0.2, "item" : "GasGiant"},
+          {"weight" : 0.05, "item" : "AsteroidField"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"},
+          {"weight" : 1, "item" : "Tier6"}
+        ]
+      },
+      {
+        "regionName" : "Tier6Outer",
+        "orbitRange" : [9, 10],
+        "bodyProbability" : 0.5,
+        "planetaryTypes" : [
+          {"weight" : 0.2, "item" : "Barren"},
+          {"weight" : 0.2, "item" : "ceMoltenBarren"},
+          {"weight" : 0.4, "item" : "GasGiant"},
+          {"weight" : 0.05, "item" : "AsteroidField"}
+        ],
+        "satelliteTypes" : [
+          {"weight" : 1, "item" : "Moon"}
+        ]
+      },
+      {
+        "regionName" : "Gate",
+        "orbitRange" : [11, 11],
+        "bodyProbability" : 1.0,
+        "planetaryTypes" : [
+          {"weight" : 0.2, "item" : "AncientGateway"},
+          {"weight" : 0.1, "item" : "AsteroidField"},
+          {"weight" : 0.1, "item" : "Barren"}
+        ],
+        "satelliteTypes" : []
+      }
+    ] 
+  },
+
+  // planetaryTypes
+  { "op" : "add", "path" : "/planetaryTypes/ceFrozenBarren", "value" : {
+      "satelliteProbability" : 0.0,
+
+      "baseParameters" : {
+        "worldType" : "Terrestrial",
+        "description" : "Frozen Barren Planet",
+        "smallImage" : "/celestial/system/planet_small.png",
+
+        "terrestrialType" : [ "cefrozenbarren" ]
+      },
+
+      "variationParameters" : [
+        {
+          "imageScale" : 0.075,
+          "smallImageScale" : 0.4,
+          "worldSize" : "small"
+        },
+        {
+          "imageScale" : 0.1,
+          "smallImageScale" : 0.5,
+          "worldSize" : "medium"
+        },
+        {
+          "imageScale" : 0.15,
+          "smallImageScale" : 0.6,
+          "worldSize" : "large"
+        }
+      ]
+    } 
+  },
+  { "op" : "add", "path" : "/planetaryTypes/ceMoltenBarren", "value" : {
+      "satelliteProbability" : 0.0,
+
+      "baseParameters" : {
+        "worldType" : "Terrestrial",
+        "description" : "Molten Barren Planet",
+        "smallImage" : "/celestial/system/planet_small.png",
+
+        "terrestrialType" : [ "cemoltenbarren" ]
+      },
+
+      "variationParameters" : [
+        {
+          "imageScale" : 0.075,
+          "smallImageScale" : 0.4,
+          "worldSize" : "small"
+        },
+        {
+          "imageScale" : 0.1,
+          "smallImageScale" : 0.5,
+          "worldSize" : "medium"
+        },
+        {
+          "imageScale" : 0.15,
+          "smallImageScale" : 0.6,
+          "worldSize" : "large"
+        }
+      ]
+    } 
+  }
+]

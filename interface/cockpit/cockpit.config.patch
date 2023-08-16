@@ -1,0 +1,15 @@
+[
+  // planetTypeNames
+  { "op" : "add", "path" : "/planetTypeNames/cefrozenbarren", "value" : "Frozen Barren" },
+  { "op" : "add", "path" : "/planetTypeNames/cemoltenbarren", "value" : "Molten Barren" },
+
+  // planetTypeColors
+  { "op" : "add", "path" : "/planetTypeColors/cefrozenbarren", "value" : [165, 165, 165] },
+  { "op" : "add", "path" : "/planetTypeColors/cemoltenbarren", "value" : [165, 165, 165] },
+
+  // jumpDialog
+  { "op" : "add", "path" : "/jumpDialog/noFTL", "value" : "FTL travel requires an ^red;FTL Drive^reset;.\n Cannot proceed." },
+
+  // scripts
+  { "op" : "add", "path" : "/scripts/-", "value" : "/interface/cockpit/cecockpit.lua" }
+]

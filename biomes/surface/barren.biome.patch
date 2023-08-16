@@ -1,0 +1,4 @@
+[
+  { "op" : "add", "path" : "/airless", "value" : true },
+  { "op" : "replace", "path" : "/ores", "value" : "cebarren" }
+]

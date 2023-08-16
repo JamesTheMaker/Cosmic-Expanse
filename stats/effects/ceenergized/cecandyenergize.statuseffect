@@ -1,0 +1,17 @@
+{
+  "name" : "cecandyenergize",
+  "effectConfig" : {
+    "energyAmount" : 0,
+    "emissionRate" : 5
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "ceenergized.lua"
+  ],
+
+  "animationConfig" : "ceengerized.animation",
+
+  "label" : "Energized",
+  "icon" : "/interface/statuses/energyregen.png"
+}

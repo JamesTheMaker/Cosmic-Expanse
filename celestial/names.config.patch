@@ -1,0 +1,9 @@
+[	
+	// prefixes
+	{ "op" : "add", "path" : "/systemNames/-", "value" : [ 1.0, "Spiteful" ] },
+	{ "op" : "add", "path" : "/systemNames/-", "value" : [ 2.0, "Saytr" ] },
+	{ "op" : "add", "path" : "/systemNames/-", "value" : [ 1.0, "Kage" ] },
+
+	// suffixes
+	{ "op" : "add", "path" : "/systemSuffixNames/-", "value" : [ 2.0, "Big Chungus" ] }
+]

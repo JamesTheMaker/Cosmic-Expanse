@@ -1,0 +1,23 @@
+function showJumpDialog(system, target)
+  local fuelAmount = world.getProperty("ship.fuel")
+  if fuelAmount then
+    widget.setVisible("jumpDialog", true)
+
+    local cost = fuelCost()
+    if player.isAdmin() or (fuelAmount >= cost and contains(player.shipUpgrades().capabilities, "systemTravel")) then
+      widget.setText("jumpDialog.text", string.format(config.getParameter("jumpDialog.valid"), cost))
+      widget.setButtonEnabled("jumpDialog.jump", true)
+      widget.setData("jumpDialog.jump", {system = system, target = target})
+
+      self.travel.confirmed = false
+    elseif not contains(player.shipUpgrades().capabilities, "systemTravel") then
+      widget.setText("jumpDialog.text", string.format(config.getParameter("jumpDialog.noFTL")))
+      widget.setButtonEnabled("jumpDialog.jump", false)
+      widget.setData("jumpDialog.jump", nil)
+    else
+      widget.setText("jumpDialog.text", string.format(config.getParameter("jumpDialog.invalid"), cost))
+      widget.setButtonEnabled("jumpDialog.jump", false)
+      widget.setData("jumpDialog.jump", nil)
+    end
+  end
+end

@@ -1,0 +1,6 @@
+[
+  { "op" : "add", "path" : "/cebarren", "value" : [
+     [0.5, [ [ "copper", 0.85 ], [ "silver", 0.75 ], [ "gold", 0.65 ] ] ]
+   ]
+  }
+]
