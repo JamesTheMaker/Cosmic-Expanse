@@ -1,0 +1,4 @@
+[
+  // Generic Script Contexts
+  { "op": "add", "path": "/genericScriptContexts/ship", "value": "/scripts/player/cebyosupdate.lua" }
+]

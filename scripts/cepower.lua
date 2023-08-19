@@ -3,7 +3,9 @@ cepower = {}
 
 local pInit = init
 function init()
-  pInit()
+  if pInit then
+    pInit()
+  end
 
   storage.maxPower = config.getParameter("maxPower")
   storage.power = config.getParameter("startPower") or 0
