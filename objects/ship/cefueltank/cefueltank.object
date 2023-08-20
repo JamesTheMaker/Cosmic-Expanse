@@ -1,0 +1,41 @@
+{
+  "objectName" : "cefueltank",
+  "colonyTags" : ["industrial"],
+  "rarity" : "Common",
+  "category" : "Ship",
+  "price" : 70,
+  "description" : "A tank for holding fuel.\n^green;+100 Max Fuel",
+  "shortdescription" : "Fuel Tank",
+  "race" : "generic",
+
+  "apexDescription" : "A big tank for storing fuel.",
+  "avianDescription" : "Holds a lot of fuel.",
+  "floranDescription" : "Floran can put fuel in thiss tank.",
+  "glitchDescription" : "Content. This tank can hold fuel.",
+  "humanDescription" : "A tank for holding fuel.",
+  "hylotlDescription" : "A method of storing fuel.",
+  "novakidDescription" : "I can use this to store lots of fuel.",
+
+  "statusEffects" : [ ],
+
+  "scripts" : [ "/objects/ship/ceshipstatmod.lua" ],
+  "shipUpgrades" : {
+    "stats" : { "maxFuel" : 500 },
+    "capabilities" : [  ]
+  },
+
+  "inventoryIcon" : "cefueltankicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "cefueltank.png:default",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}
