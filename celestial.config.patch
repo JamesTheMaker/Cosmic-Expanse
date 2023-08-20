@@ -1,4 +1,7 @@
 [
+  // systemProbability
+  { "op" : "replace", "path" : "/systemProbability", "value" : 0.006 },
+
   // terrestrialGraphics
   {
     "op" : "add", "path" : "/terrestrialGraphics/cefrozenbarren", "value" : {
@@ -41,7 +44,7 @@
       {
         "regionName" : "Tier1Habitable",
         "orbitRange" : [5, 6],
-        "bodyProbability" : 0.25,
+        "bodyProbability" : 0.5,
         "planetaryTypes" : [
           {"weight" : 0.2, "item" : "Tier1"},
           {"weight" : 0.7, "item" : "Tier2"},
@@ -112,7 +115,7 @@
       {
         "regionName" : "Tier3Habitable",
         "orbitRange" : [6, 7],
-        "bodyProbability" : 0.25,
+        "bodyProbability" : 0.5,
         "planetaryTypes" : [
           {"weight" : 0.05, "item" : "Tier1"},
           {"weight" : 0.2, "item" : "Tier2"},
@@ -185,7 +188,7 @@
       {
         "regionName" : "Tier4Habitable",
         "orbitRange" : [6, 7],
-        "bodyProbability" : 0.25,
+        "bodyProbability" : 0.5,
         "planetaryTypes" : [
           {"weight" : 1.0, "item" : "Tier4"},
           {"weight" : 0.05, "item" : "Barren"},
@@ -253,7 +256,7 @@
       {
         "regionName" : "Tier5Habitable",
         "orbitRange" : [6, 7],
-        "bodyProbability" : 0.25,
+        "bodyProbability" : 0.5,
         "planetaryTypes" : [
           {"weight" : 1, "item" : "Tier5"},
           {"weight" : 0.1, "item" : "CeFrozenBarren"}
@@ -321,7 +324,7 @@
       {
         "regionName" : "Tier6Habitable",
         "orbitRange" : [6, 7],
-        "bodyProbability" : 0.25,
+        "bodyProbability" : 0.5,
         "planetaryTypes" : [
           {"weight" : 1, "item" : "Tier6"},
           {"weight" : 0.1, "item" : "ceMoltenBarren"}

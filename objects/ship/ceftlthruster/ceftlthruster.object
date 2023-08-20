@@ -47,8 +47,8 @@
   "scriptDelta" : 10,
 
   "shipUpgrades" : {
-    "stats" : { "shipSpeed" : 100 },
-    "capabilities" : [ "planetTravel" ]
+    "stats" : { "shipSpeed" : 5 },
+    "capabilities" : [  ]
   },
 
   "flyingBoosterStates" : {

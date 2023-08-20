@@ -12,23 +12,24 @@ function ceByosUpdate()
     return
   end
 
-  local defaultUpgrades = {}
-  defaultUpgrades.stats = {}
-  defaultUpgrades.capabilities = {}
+  sb.logInfo("Message recieved")
 
-  local shipUpgrades = world.getProperty("cebyos") or defaultUpgrades
   local applyShipUpgrades = {  }
 
-  applyShipUpgrades.maxFuel = shipUpgrades.stats.maxFuel or 0
-  applyShipUpgrades.crewSize = shipUpgrades.stats.crewSize or 0
-  applyShipUpgrades.shipSpeed = shipUpgrades.stats.shipSpeed or 0
+  applyShipUpgrades.maxFuel = (world.getProperty("cebyos.maxFuel") or 0) + 500
+  applyShipUpgrades.crewSize = (world.getProperty("cebyos.crewSize") or 0)
+  applyShipUpgrades.shipSpeed = (world.getProperty("cebyos.shipSpeed") or 0) + 15
   applyShipUpgrades.capabilities = { "teleport" }
+
+  sb.logInfo("Stats calculated")
   
-  for capability, enabled in pairs(shipUpgrades.capabilities) do
-    if enabled then
-     table.insert(applyShipUpgrades.capabilities, capability)
-    end
+  if world.getProperty("cebyos.capabilities.planetTravel") then
+    table.insert(applyShipUpgrades, "planetTravel")
+  end
+  if world.getProperty("cebyos.capabilities.systemTravel") then
+    table.insert(applyShipUpgrades, "systemTravel")
   end
 
   player.upgradeShip(applyShipUpgrades)
+  sb.logInfo("Ship upgraded")
 end

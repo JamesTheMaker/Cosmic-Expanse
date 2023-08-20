@@ -1,4 +1,6 @@
 [
+  { "op" : "replace", "path" : "/useSecondaryEnvironmentBiomeIndex", "value" : true },
+
   // planetTypes
   { "op" : "replace", "path" : "/planetTypes/forest/layers/surface/dungeons", "value" : [[1.0, "floranhuntinggrounds"], [1.0, "florancanyon"], [1.0, "florancanyon"], [1.0, "floranvillagetower"], [1.0, "floranhutvillage"], [1.0, "humanprison"], [1.0, "humancamp"], [1.0, "glitchsewer"]] },
   { "op" : "replace", "path" : "/planetTypes/desert/layers/surface/dungeons", "value" : [[1.0, "aviannativevillage"],  [1.0, "avianairship"], [1.0, "humanprison"], [1.0, "humancamp"], [1.0, "glitchsewer"], [1.0, "novakidvillage"]] },

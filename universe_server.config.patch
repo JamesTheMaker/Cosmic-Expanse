@@ -1,3 +1,9 @@
 [
-  { "op": "remove", "path": "/findStarterWorldParameters/requiredSystemWorlds" }
+  { "op" : "remove", "path" : "/findStarterWorldParameters/starterWorld/terrestrialSize" },
+  { "op" : "replace", "path" : "/findStarterWorldParameters/requiredSystemWorlds", "value" : [
+      {
+        "floatingDungeon" : "ancientgateway"
+      }
+    ] 
+  }
 ]

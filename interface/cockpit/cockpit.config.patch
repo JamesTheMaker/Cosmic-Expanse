@@ -7,7 +7,7 @@
     ] 
   },
   { "op" : "add", "path" : "/visitableTypeDescription/cemoltenbarren", "value" : [
-      "This location is ^#999966;barren^white and hot. Readings show there is nothing here. An empty, empty place.",
+      "This location is ^#999966;barren^white; and very hot. Readings show there is nothing here. An empty, empty place.",
       "This planet is ^#999966;barren^white;, supporting no life of any kind. The surface is absolutely burning.",
       "Readings indicate that the landing site is of unusual hue. Also, that it is a ^#999966;barren^white; location and molten on the surface."
     ] 
@@ -20,6 +20,9 @@
   // planetTypeColors
   { "op" : "add", "path" : "/planetTypeColors/cefrozenbarren", "value" : [165, 165, 165] },
   { "op" : "add", "path" : "/planetTypeColors/cemoltenbarren", "value" : [165, 165, 165] },
+
+  // jumpFuelCost
+  { "op" : "replace", "path" : "/jumpFuelCost", "value" : 50 },
 
   // jumpDialog
   { "op" : "add", "path" : "/jumpDialog/noFTL", "value" : "FTL travel requires an ^red;FTL Drive^reset;.\n Cannot proceed." },

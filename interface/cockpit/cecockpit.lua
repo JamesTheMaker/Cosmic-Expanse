@@ -36,14 +36,6 @@ function fuelCost()
 
   local distance = math.sqrt( ((origin[1] - destination[1]) ^ 2) + ((origin[2] - destination[2]) ^ 2) )
 
-  cost = cost + distance
+  cost = cost + (distance * 2)
   return util.round(cost - cost * (world.getProperty("ship.fuelEfficiency") or 0.0))
-end
-
-function canFlyShip(system)
-  if not compare(system, celestial.currentSystem()) then
-    return not celestial.flying() and not celestial.skyFlying()
-  else
-    return celestial.skyFlyingType() ~= "arriving"
-  end
 end

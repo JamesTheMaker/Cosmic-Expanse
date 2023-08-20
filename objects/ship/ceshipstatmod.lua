@@ -8,7 +8,7 @@ function init()
   if not storage.applied then
   	if config.getParameter("shipUpgrades.capabilities") then
   	  for _, capability in pairs(config.getParameter("shipUpgrades.capabilities")) do
-  	  	if world.getProperty("cebyos.capabilities." .. capability) == true then
+  	  	if world.getProperty("cebyos.capabilities." .. capability) then
   	  	  object.smash(false)
   	  	  return
   	  	end
@@ -36,6 +36,9 @@ function apply()
   for _, capability in pairs(config.getParameter("shipUpgrades.capabilities")) do
   	world.setProperty("cebyos.capabilities." .. capability, true)
   end
+
+  sb.logInfo("Stats applied")
+  byosUpdate()
 end
 
 function unapply()
@@ -47,12 +50,16 @@ function unapply()
   for _, capability in pairs(config.getParameter("shipUpgrades.capabilities")) do
   	world.setProperty("cebyos.capabilities." .. capability, false)
   end
+
+  sb.logInfo("Stats unapplied")
+  byosUpdate()
 end
 
-function update()
+function byosUpdate()
   if world.type() ~= "unknown" then return end -- Check if spaceship or not
 
   for _, player in pairs(world.players()) do
     world.sendEntityMessage(player, "ceByosUpdate")
+    sb.logInfo("Message sent to %s", player)
   end
 end
