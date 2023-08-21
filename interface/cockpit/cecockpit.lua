@@ -9,7 +9,7 @@ function showJumpDialog(system, target)
   if fuelAmount then
     widget.setVisible("jumpDialog", true)
 
-    local cost = fuelCost(system)
+    local cost = fuelCost()
     if player.isAdmin() or (fuelAmount >= cost and contains(player.shipUpgrades().capabilities, "systemTravel")) then
       widget.setText("jumpDialog.text", string.format(config.getParameter("jumpDialog.valid"), cost))
       widget.setButtonEnabled("jumpDialog.jump", true)
@@ -28,11 +28,15 @@ function showJumpDialog(system, target)
   end
 end
 
-function fuelCost(system)
+function fuelCost()
   local cost = ( config.getParameter("jumpFuelCost") )
 
+  if self.travel.system then
+    self.fuelCostDestination = self.travel.system
+  end
+
   local origin = celestial.currentSystem().location
-  local destination = system
+  local destination = self.fuelCostDestination
 
   local distance = math.sqrt( ((origin[1] - destination[1]) ^ 2) + ((origin[2] - destination[2]) ^ 2) )
 
