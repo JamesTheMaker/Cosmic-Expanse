@@ -13,6 +13,13 @@
       "baseImages" : "/celestial/system/terrestrial/biomes/scorchedcity/maskie<num>.png"
     }
   },
+  {
+    "op" : "add", "path" : "/terrestrialGraphics/ceancient", "value" : {
+      "baseImages" : "/celestial/system/terrestrial/biomes/ceancient/maskie<num>.png",
+      "dynamicsImages" : "/celestial/system/terrestrial/dynamics/arid/<num>.png",
+      "dynamicsRange" : [1, 50]
+    }
+  },
 
   // terrestrialHorizonGraphics
   { "op" : "add", "path" : "/terrestrialHorizonGraphics/cefrozenbarren", "value" : {
@@ -22,6 +29,11 @@
   },
   { "op" : "add", "path" : "/terrestrialHorizonGraphics/cemoltenbarren", "value" : {
       "baseImages" : "/celestial/system/terrestrial/horizon/textures/scorchedcity_<selector>.png",
+      "maskPerPlanetRange" : [0, 0]
+    } 
+  },
+  { "op" : "add", "path" : "/terrestrialHorizonGraphics/ceancient", "value" : {
+      "baseImages" : "/celestial/system/terrestrial/horizon/textures/ceancient_<selector>.png",
       "maskPerPlanetRange" : [0, 0]
     } 
   },
@@ -91,6 +103,7 @@
         "bodyProbability" : 1.0,
         "planetaryTypes" : [
           {"weight" : 0.2, "item" : "AncientGateway"},
+          {"weight" : 0.05, "item" : "ceAncient"},
           {"weight" : 0.1, "item" : "AsteroidField"},
           {"weight" : 0.1, "item" : "ceFrozenBarren"}
         ],
@@ -164,6 +177,7 @@
         "bodyProbability" : 1.0,
         "planetaryTypes" : [
           {"weight" : 0.2, "item" : "AncientGateway"},
+          {"weight" : 0.05, "item" : "ceAncient"},
           {"weight" : 0.1, "item" : "AsteroidField"},
           {"weight" : 0.1, "item" : "ceFrozenBarren"}
         ],
@@ -232,6 +246,7 @@
         "bodyProbability" : 1.0,
         "planetaryTypes" : [
           {"weight" : 0.2, "item" : "AncientGateway"},
+          {"weight" : 0.05, "item" : "ceAncient"},
           {"weight" : 0.1, "item" : "AsteroidField"},
           {"weight" : 0.1, "item" : "ceFrozenBarren"}
         ],
@@ -300,6 +315,7 @@
         "bodyProbability" : 1.0,
         "planetaryTypes" : [
           {"weight" : 0.2, "item" : "AncientGateway"},
+          {"weight" : 0.05, "item" : "ceAncient"},
           {"weight" : 0.1, "item" : "AsteroidField"},
           {"weight" : 0.1, "item" : "ceFrozenBarren"}
         ],
@@ -368,6 +384,7 @@
         "bodyProbability" : 1.0,
         "planetaryTypes" : [
           {"weight" : 0.2, "item" : "AncientGateway"},
+          {"weight" : 0.05, "item" : "ceAncient"},
           {"weight" : 0.1, "item" : "AsteroidField"},
           {"weight" : 0.1, "item" : "Barren"}
         ],
@@ -433,6 +450,26 @@
           "imageScale" : 0.15,
           "smallImageScale" : 0.6,
           "worldSize" : "large"
+        }
+      ]
+    } 
+  },
+  { "op" : "add", "path" : "/planetaryTypes/ceAncient", "value" : {
+      "satelliteProbability" : 0.0,
+
+      "baseParameters" : {
+        "worldType" : "Terrestrial",
+        "description" : "Ancient Planet",
+        "smallImage" : "/celestial/system/planet_small.png",
+
+        "terrestrialType" : [ "ceancient" ]
+      },
+
+      "variationParameters" : [
+        {
+          "imageScale" : 0.075,
+          "smallImageScale" : 0.4,
+          "worldSize" : "small"
         }
       ]
     } 

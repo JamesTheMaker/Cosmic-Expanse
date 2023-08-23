@@ -1,0 +1,65 @@
+{
+  "name" : "ceancient",
+  "friendlyName" : "Ancient",
+
+  "statusEffects" : [  ],
+
+  "hueShiftOptions" : [0],
+
+  "weather" : [
+    [0, [
+      "/weather.config:clear"
+    ]]
+  ],
+
+  "skyOptions" : [
+  
+    {
+      // dark peachy massacre
+      "mainColor" : [255, 255, 255],
+
+      "morningColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
+      "dayColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
+      "eveningColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
+      "nightColors" : [ [24, 38, 100, 80], [58, 42, 190, 160] ],
+
+      "morningLightColor" : [40, 40, 80],
+      "dayLightColor" : [40, 40, 80],
+      "eveningLightColor" : [40, 40, 80],
+      "nightLightColor" : [40, 40, 80]
+    }
+
+  ],
+
+  "mainBlock" : "ancientblock",
+  "subBlocks" : [ "ancientbrick" ],
+  "ores" : "none",
+
+  "parallax" : "/parallax/surface/ceancient.parallax",
+
+  "ambientNoises" : {
+    "day" : {
+      "tracks" : [ "/sfx/environmental/arid_day.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/sfx/environmental/arid_night.ogg" ]
+    }
+  },
+
+  "musicTrack" : {
+    "day" : {
+      "tracks" : [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/cygnus-x1.ogg", "/music/tranquility-base.ogg", "/music/accretion-disc.ogg", "/music/horsehead-nebula.ogg","/music/psyche.ogg", "/music/large-magellanic-cloud.ogg", "/music/m54.ogg", "/music/nomads.ogg", "/music/on-the-beach-at-night.ogg" ]
+    },
+    "night" : {
+      "tracks" : [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/tranquility-base.ogg", "/music/accretion-disc.ogg", "/music/horsehead-nebula.ogg", "/music/psyche.ogg", "/music/large-magellanic-cloud.ogg", "/music/m54.ogg", "/music/nomads.ogg", "/music/on-the-beach-at-night.ogg" ]
+    }
+  },
+
+  "surfacePlaceables" : {
+    "items" : [ ]
+  },
+
+  "undergroundPlaceables" : {
+    "items" : [ ]
+  }
+}

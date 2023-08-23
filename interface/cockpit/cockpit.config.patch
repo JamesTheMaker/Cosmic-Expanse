@@ -12,14 +12,21 @@
       "Readings indicate that the landing site is of unusual hue. Also, that it is a ^#999966;barren^white; location and molten on the surface."
     ] 
   },
+  { "op" : "add", "path" : "/visitableTypeDescription/ceancient", "value" : [
+      "Despite the surface's anomalous readings, it is obvious the planet is truly ^#571cff;Ancient^white; and artificial in nature."
+    ] 
+  },
 
   // planetTypeNames
   { "op" : "add", "path" : "/planetTypeNames/cefrozenbarren", "value" : "Frozen Barren" },
   { "op" : "add", "path" : "/planetTypeNames/cemoltenbarren", "value" : "Molten Barren" },
+  { "op" : "add", "path" : "/planetTypeNames/ceancient", "value" : "Ancient" },
 
   // planetTypeColors
+  { "op" : "replace", "path" : "/planetTypeColors/ancientgateway", "value" : [87, 28, 255] },
   { "op" : "add", "path" : "/planetTypeColors/cefrozenbarren", "value" : [165, 165, 165] },
   { "op" : "add", "path" : "/planetTypeColors/cemoltenbarren", "value" : [165, 165, 165] },
+  { "op" : "add", "path" : "/planetTypeColors/ceancient", "value" : [87, 28, 255] },
 
   // jumpFuelCost
   { "op" : "replace", "path" : "/jumpFuelCost", "value" : 50 },

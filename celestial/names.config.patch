@@ -1,4 +1,4 @@
-[	
+[
 	// prefixes
 	{ "op" : "add", "path" : "/systemNames/-", "value" : [ 1.0, "Spiteful" ] },
 	{ "op" : "add", "path" : "/systemNames/-", "value" : [ 2.0, "Saytr" ] },

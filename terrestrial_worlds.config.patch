@@ -66,6 +66,33 @@
       }
     }
   },
+  { "op" : "add", "path" : "/planetTypes/ceancient", "value" : {
+      "threatRange" : [7, 7],
+      "layers" : {
+        "surface" : {
+          "primaryRegion" : ["ceancient"]
+        },
+        "subsurface" : {
+          "primaryRegion" : ["cemoltenbarrenunderground"]
+        },
+        "underground1" : {
+          "primaryRegion" : ["cemoltenbarrenunderground"],
+          "secondaryRegions" : []
+        },
+        "underground2" : {
+          "primaryRegion" : ["cemoltenbarrenunderground"],
+          "secondaryRegions" : []
+        },
+        "underground3" : {
+          "primaryRegion" : ["cemoltenbarrenunderground"],
+          "secondaryRegions" : []
+        },
+        "core" : {
+          "primaryRegion" : ["cemoltenbarrenunderground"]
+        }
+      }
+    }
+  },
 
   // regionTypes
   { "op" : "add", "path" : "/regionTypes/cefrozenbarren", "value" : {
@@ -83,6 +110,15 @@
       "bgCaveSelector" : [ "empty" ],
       "biome" : [
         [0, [ "cemoltenbarren" ]]
+      ]
+    }
+  },
+  { "op" : "add", "path" : "/regionTypes/ceancient", "value" : {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "empty" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "ceancient" ]]
       ]
     }
   },
