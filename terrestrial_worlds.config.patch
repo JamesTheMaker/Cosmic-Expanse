@@ -70,7 +70,9 @@
       "threatRange" : [7, 7],
       "layers" : {
         "surface" : {
-          "primaryRegion" : ["ceancient"]
+          "primaryRegion" : ["ceancient"],
+          "dungeonCountRange" : [1, 1],
+          "dungeons" : [[1.0, "gardengate"]]
         },
         "subsurface" : {
           "primaryRegion" : ["cemoltenbarrenunderground"]
