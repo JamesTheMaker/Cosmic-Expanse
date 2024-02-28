@@ -1,0 +1,39 @@
+--- Dwarf Star ---
+Very Hot: 1 - 1
+Hot: 2 - 2
+Temperate: 3 - 4
+Cold: 5 - 7
+Very Cold: 8 - 10
+Ancient Gateway: 11 - 11
+
+--- Cool Star ---
+Very Hot: 1 - 1
+Hot: 2 - 3
+Temperate: 4 - 5
+Cold: 6 - 7
+Very Cold: 8 - 10
+Ancient Gateway: 11 - 11
+
+--- Temperate Star ---
+Very Hot: 1 - 2
+Hot: 3 - 4
+Temperate: 5 - 6
+Cold: 7 - 8
+Very Cold: 9 - 10
+Ancient Gateway: 11 - 11
+
+--- Warm Star ---
+Very Hot: 1 - 3
+Hot: 4 - 5
+Temperate: 6 - 7
+Cold: 8 - 9
+Very Cold: 10 - 10
+Ancient Gateway: 11 - 11
+
+--- Giant Star ---
+Very Hot: 1 - 3
+Hot: 4 - 6
+Temperate: 7 - 8
+Cold: 9 - 9
+Very Cold: 10 - 10
+Ancient Gateway: 11 - 11

@@ -1,0 +1,735 @@
+{
+    "systemTypes" : {
+        "White" : {
+            "orbitRegions" : [
+                {
+                    "regionName" : "VeryHot",
+                    "orbitRange" : [1, 3],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "VeryHot" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "VeryHot" }
+                    ]
+                },
+                {
+                    "regionName" : "Hot",
+                    "orbitRange" : [4, 5],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "Hot" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "Hot" }
+                    ]
+                },
+                {
+                    "regionName" : "Temperate",
+                    "orbitRange" : [6, 7],
+                    "bodyProbability" : 0.75,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "Temperate" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "Temperate" }
+                    ]
+                },
+                {
+                    "regionName" : "Cold",
+                    "orbitRange" : [8, 9],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "Cold" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "Cold" }
+                    ]
+                },
+                {
+                    "regionName" : "VeryCold",
+                    "orbitRange" : [10, 10],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "VeryCold" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "VeryCold" }
+                    ]
+                },
+                {
+                    "regionName" : "Gate",
+                    "orbitRange" : [11, 11],
+                    "bodyProbability" : 0.25,
+                    "planetaryTypes" : [
+                        { "weight" : 0.5, "item" : "AncientGateway" },
+                        { "weight" : 0.5, "item" : "Barren" }
+                    ],
+                    "satelliteTypes" : [ ]
+                }
+            ]
+        },
+        "Orange" : {
+            "orbitRegions" : [
+                {
+                    "regionName" : "VeryHot",
+                    "orbitRange" : [1, 1],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "VeryHot" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "VeryHot" }
+                    ]
+                },
+                {
+                    "regionName" : "Hot",
+                    "orbitRange" : [2, 3],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "Hot" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "Hot" }
+                    ]
+                },
+                {
+                    "regionName" : "Temperate",
+                    "orbitRange" : [4, 5],
+                    "bodyProbability" : 0.75,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "Temperate" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "Temperate" }
+                    ]
+                },
+                {
+                    "regionName" : "Cold",
+                    "orbitRange" : [6, 7],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "Cold" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "Cold" }
+                    ]
+                },
+                {
+                    "regionName" : "VeryCold",
+                    "orbitRange" : [8, 10],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "VeryCold" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "VeryCold" }
+                    ]
+                },
+                {
+                    "regionName" : "Gate",
+                    "orbitRange" : [11, 11],
+                    "bodyProbability" : 0.25,
+                    "planetaryTypes" : [
+                        { "weight" : 0.5, "item" : "AncientGateway" },
+                        { "weight" : 0.5, "item" : "Barren" }
+                    ],
+                    "satelliteTypes" : [ ]
+                }
+            ]
+        },
+        "Yellow" : {
+            "orbitRegions" : [
+                {
+                    "regionName" : "VeryHot",
+                    "orbitRange" : [1, 2],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "VeryHot" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "VeryHot" }
+                    ]
+                },
+                {
+                    "regionName" : "Hot",
+                    "orbitRange" : [3, 4],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "Hot" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "Hot" }
+                    ]
+                },
+                {
+                    "regionName" : "Temperate",
+                    "orbitRange" : [5, 6],
+                    "bodyProbability" : 0.75,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "Temperate" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "Temperate" }
+                    ]
+                },
+                {
+                    "regionName" : "Cold",
+                    "orbitRange" : [7, 8],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "Cold" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "Cold" }
+                    ]
+                },
+                {
+                    "regionName" : "VeryCold",
+                    "orbitRange" : [9, 10],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "VeryCold" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "VeryCold" }
+                    ]
+                },
+                {
+                    "regionName" : "Gate",
+                    "orbitRange" : [11, 11],
+                    "bodyProbability" : 0.25,
+                    "planetaryTypes" : [
+                        { "weight" : 0.5, "item" : "AncientGateway" },
+                        { "weight" : 0.5, "item" : "Barren" }
+                    ],
+                    "satelliteTypes" : [ ]
+                }
+            ]
+        },
+        "Blue" : {
+            "orbitRegions" : [
+                {
+                    "regionName" : "VeryHot",
+                    "orbitRange" : [1, 3],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "VeryHot" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "VeryHot" }
+                    ]
+                },
+                {
+                    "regionName" : "Hot",
+                    "orbitRange" : [4, 6],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "Hot" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "Hot" }
+                    ]
+                },
+                {
+                    "regionName" : "Temperate",
+                    "orbitRange" : [7, 8],
+                    "bodyProbability" : 0.75,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "Temperate" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "Temperate" }
+                    ]
+                },
+                {
+                    "regionName" : "Cold",
+                    "orbitRange" : [9, 9],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "Cold" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "Cold" }
+                    ]
+                },
+                {
+                    "regionName" : "VeryCold",
+                    "orbitRange" : [10, 10],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "VeryCold" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "VeryCold" }
+                    ]
+                },
+                {
+                    "regionName" : "Gate",
+                    "orbitRange" : [11, 11],
+                    "bodyProbability" : 0.25,
+                    "planetaryTypes" : [
+                        { "weight" : 0.5, "item" : "AncientGateway" },
+                        { "weight" : 0.5, "item" : "Barren" }
+                    ],
+                    "satelliteTypes" : [ ]
+                }
+            ]
+        },
+        "Red" : {
+            "orbitRegions" : [
+                {
+                    "regionName" : "VeryHot",
+                    "orbitRange" : [1, 1],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "VeryHot" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "VeryHot" }
+                    ]
+                },
+                {
+                    "regionName" : "Hot",
+                    "orbitRange" : [2, 2],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "Hot" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "Hot" }
+                    ]
+                },
+                {
+                    "regionName" : "Temperate",
+                    "orbitRange" : [3, 4],
+                    "bodyProbability" : 0.75,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "Temperate" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "Temperate" }
+                    ]
+                },
+                {
+                    "regionName" : "Cold",
+                    "orbitRange" : [5, 7],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "Cold" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "Cold" }
+                    ]
+                },
+                {
+                    "regionName" : "VeryCold",
+                    "orbitRange" : [8, 10],
+                    "bodyProbability" : 0.5,
+                    "planetaryTypes" : [
+                        { "weight" : 0.7, "item" : "VeryCold" },
+                        { "weight" : 0.1, "item" : "Barren" },
+                        { "weight" : 0.1, "item" : "GasGiant" },
+                        { "weight" : 0.1, "item" : "AsteroidField" }
+                    ],
+                    "satelliteTypes" : [
+                        { "weight" : 0.7, "item" : "Moon" },
+                        { "weight" : 0.3, "item" : "VeryCold" }
+                    ]
+                },
+                {
+                    "regionName" : "Gate",
+                    "orbitRange" : [11, 11],
+                    "bodyProbability" : 0.25,
+                    "planetaryTypes" : [
+                        { "weight" : 0.5, "item" : "AncientGateway" },
+                        { "weight" : 0.5, "item" : "Barren" }
+                    ],
+                    "satelliteTypes" : [ ]
+                }
+            ]
+        }
+    },
+
+    "planetaryTypes" : {
+        "Temperate" : {
+            "satelliteProbability" : 0.65,
+            "maxSatelliteCount" : 3,
+
+            "baseParameters" : {
+                "worldType" : "Terrestrial",
+                "description" : "Temperate Planet",
+                "smallImage" : "/celestial/system/planet_small.png",
+
+                "terrestrialType" : [ "savannah", "forest", "ocean" ]
+            },
+
+            "variationParameters" : [
+                {
+                    "imageScale" : 0.1,
+                    "smallImageScale" : 0.5,
+                    "worldSize" : "medium"
+                },
+                {
+                    "imageScale" : 0.125,
+                    "smallImageScale" : 0.6,
+                    "worldSize" : "large"
+                }
+            ]
+        },
+        "Hot" : {
+            "satelliteProbability" : 0.65,
+            "maxSatelliteCount" : 3,
+
+            "baseParameters" : {
+                "worldType" : "Terrestrial",
+                "description" : "Hot Planet",
+                "smallImage" : "/celestial/system/planet_small.png",
+
+                "terrestrialType" : [ "desert", "scorchedcity" ]
+            },
+
+            "variationParameters" : [
+                {
+                    "imageScale" : 0.1,
+                    "smallImageScale" : 0.5,
+                    "worldSize" : "medium"
+                },
+                {
+                    "imageScale" : 0.125,
+                    "smallImageScale" : 0.6,
+                    "worldSize" : "large"
+                }
+            ]
+        },
+        "VeryHot" : {
+            "satelliteProbability" : 0.65,
+            "maxSatelliteCount" : 3,
+
+            "baseParameters" : {
+                "worldType" : "Terrestrial",
+                "description" : "Very Hot Planet",
+                "smallImage" : "/celestial/system/planet_small.png",
+
+                "terrestrialType" : [ "volcanic", "magma" ]
+            },
+
+            "variationParameters" : [
+                {
+                    "imageScale" : 0.1,
+                    "smallImageScale" : 0.5,
+                    "worldSize" : "medium"
+                },
+                {
+                    "imageScale" : 0.125,
+                    "smallImageScale" : 0.6,
+                    "worldSize" : "large"
+                }
+            ]
+        },
+        "Cold" : {
+            "satelliteProbability" : 0.65,
+            "maxSatelliteCount" : 3,
+
+            "baseParameters" : {
+                "worldType" : "Terrestrial",
+                "description" : "Cold Planet",
+                "smallImage" : "/celestial/system/planet_small.png",
+
+                "terrestrialType" : [ "snow", "arctic" ]
+            },
+
+            "variationParameters" : [
+                {
+                    "imageScale" : 0.1,
+                    "smallImageScale" : 0.5,
+                    "worldSize" : "medium"
+                },
+                {
+                    "imageScale" : 0.125,
+                    "smallImageScale" : 0.6,
+                    "worldSize" : "large"
+                }
+            ]
+        },
+        "VeryCold" : {
+            "satelliteProbability" : 0.65,
+            "maxSatelliteCount" : 3,
+
+            "baseParameters" : {
+                "worldType" : "Terrestrial",
+                "description" : "Very Cold Planet",
+                "smallImage" : "/celestial/system/planet_small.png",
+
+                "terrestrialType" : [ "tundra", "midnight" ]
+            },
+
+            "variationParameters" : [
+                {
+                    "imageScale" : 0.1,
+                    "smallImageScale" : 0.5,
+                    "worldSize" : "medium"
+                },
+                {
+                    "imageScale" : 0.125,
+                    "smallImageScale" : 0.6,
+                    "worldSize" : "large"
+                }
+            ]
+        },
+        "Toxic" : {
+            "satelliteProbability" : 0.65,
+            "maxSatelliteCount" : 3,
+
+            "baseParameters" : {
+                "worldType" : "Terrestrial",
+                "description" : "Toxic Planet",
+                "smallImage" : "/celestial/system/planet_small.png",
+
+                "terrestrialType" : [ /* "swamp", */ "jungle" ]
+            },
+
+            "variationParameters" : [
+                {
+                    "imageScale" : 0.1,
+                    "smallImageScale" : 0.5,
+                    "worldSize" : "medium"
+                },
+                {
+                    "imageScale" : 0.125,
+                    "smallImageScale" : 0.6,
+                    "worldSize" : "large"
+                }
+            ]
+        },
+        "VeryToxic" : {
+            "satelliteProbability" : 0.65,
+            "maxSatelliteCount" : 3,
+
+            "baseParameters" : {
+                "worldType" : "Terrestrial",
+                "description" : "Very Toxic Planet",
+                "smallImage" : "/celestial/system/planet_small.png",
+
+                "terrestrialType" : [ "mutated", "toxic" ]
+            },
+
+            "variationParameters" : [
+                {
+                    "imageScale" : 0.1,
+                    "smallImageScale" : 0.5,
+                    "worldSize" : "medium"
+                },
+                {
+                    "imageScale" : 0.125,
+                    "smallImageScale" : 0.6,
+                    "worldSize" : "large"
+                }
+            ]
+        }
+    },
+
+    "satelliteTypes" : {
+        "Temperate" : {
+            "baseParameters" : {
+                "worldType" : "Terrestrial",
+                "description" : "Temperate Moon",
+
+                "terrestrialType" : [ "savannah", "forest", "ocean" ]
+            },
+
+            "variationParameters" : [
+                {
+                    "imageScale" : 0.060,
+                    "worldSize" : "small"
+                }
+            ]
+        },
+        "Hot" : {
+            "baseParameters" : {
+                "worldType" : "Terrestrial",
+                "description" : "Hot Moon",
+
+                "terrestrialType" : [ "desert", "scorchedcity" ]
+            },
+
+            "variationParameters" : [
+                {
+                    "imageScale" : 0.060,
+                    "worldSize" : "small"
+                }
+            ]
+        },
+        "VeryHot" : {
+            "baseParameters" : {
+                "worldType" : "Terrestrial",
+                "description" : "Very Hot Moon",
+
+                "terrestrialType" : [ "volcanic", "magma" ]
+            },
+
+            "variationParameters" : [
+                {
+                    "imageScale" : 0.060,
+                    "worldSize" : "small"
+                }
+            ]
+        },
+        "Cold" : {
+            "baseParameters" : {
+                "worldType" : "Terrestrial",
+                "description" : "Cold Moon",
+
+                "terrestrialType" : [ "snow", "arctic" ]
+            },
+
+            "variationParameters" : [
+                {
+                    "imageScale" : 0.060,
+                    "worldSize" : "small"
+                }
+            ]
+        },
+        "VeryCold" : {
+            "baseParameters" : {
+                "worldType" : "Terrestrial",
+                "description" : "Very Cold MOon",
+
+                "terrestrialType" : [ "tundra", "midnight" ]
+            },
+
+            "variationParameters" : [
+                {
+                    "imageScale" : 0.060,
+                    "worldSize" : "small"
+                }
+            ]
+        },
+        "Toxic" : {
+            "baseParameters" : {
+                "worldType" : "Terrestrial",
+                "description" : "Toxic Moon",
+
+                "terrestrialType" : [ /* "swamp", */ "jungle" ]
+            },
+
+            "variationParameters" : [
+                {
+                    "imageScale" : 0.060,
+                    "worldSize" : "small"
+                }
+            ]
+        },
+        "VeryToxic" : {
+            "baseParameters" : {
+                "worldType" : "Terrestrial",
+                "description" : "Very Toxic Moon",
+
+                "terrestrialType" : [ "mutated", "toxic" ]
+            },
+
+            "variationParameters" : [
+                {
+                    "imageScale" : 0.060,
+                    "worldSize" : "small"
+                }
+            ]
+        }
+    }
+}
