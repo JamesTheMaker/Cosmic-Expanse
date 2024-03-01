@@ -5,6 +5,6 @@
     ],
     [
         { "op" : "remove", "path" : "/statusEffects", "find" : "biomeheat" },
-        { "op" : "add", "path" : "/statusEffects/-", "value" : "ce_biomeheat10" }
+        { "op" : "add", "path" : "/statusEffects/-", "value" : "ce_biomeheat70" }
     ]
 ]

@@ -1,0 +1,22 @@
+{
+    "name" : "ce_biomecold30",
+  
+    "effectConfig" : {
+      "tickRate" : 1.0,
+      "tickDamage" : 6,
+  
+      "resistStat" : "ice",
+      "resistPerc" : 0.30
+    },
+    "defaultDuration" : 1.0,
+  
+    "scripts" : [
+      "ce_biomecold.lua"
+    ],
+  
+    "animationConfig" : "ce_biomecold.animation",
+  
+    "label" : "^blue;30%^reset; Deadly Chill",
+    "icon" : "/interface/statuses/biomecold.png"
+  }
+  

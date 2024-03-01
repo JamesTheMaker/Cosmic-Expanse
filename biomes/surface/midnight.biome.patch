@@ -4,7 +4,7 @@
         { "op" : "add", "path" : "/statusEffects", "value" : [] }
     ],
     [
-        { "op" : "remove", "path" : "/statusEffects", "find" : "biomeheat" },
-        { "op" : "add", "path" : "/statusEffects/-", "value" : "ce_biomeheat10" }
+        { "op" : "remove", "path" : "/statusEffects", "find" : "biomecold" },
+        { "op" : "add", "path" : "/statusEffects/-", "value" : "ce_biomecold90" }
     ]
 ]

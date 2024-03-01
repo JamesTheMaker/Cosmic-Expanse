@@ -1,0 +1,22 @@
+{
+    "name" : "ce_biometoxic50",
+  
+    "effectConfig" : {
+      "tickRate" : 1.0,
+      "tickDamage" : 9,
+  
+      "resistStat" : "poison",
+      "resistPerc" : 0.50
+    },
+    "defaultDuration" : 1.0,
+  
+    "scripts" : [
+      "ce_biometoxic.lua"
+    ],
+  
+    "animationConfig" : "ce_biometoxic.animation",
+  
+    "label" : "^green;50%^reset; Deadly Toxicity",
+    "icon" : "/interface/statuses/biomeradioactive.png"
+  }
+  

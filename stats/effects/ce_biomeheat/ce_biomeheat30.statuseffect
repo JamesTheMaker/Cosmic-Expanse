@@ -1,12 +1,12 @@
 {
-  "name" : "ce_biomeheat70",
+  "name" : "ce_biomeheat30",
 
   "effectConfig" : {
-    "tickRate" : 0.5,
-    "tickDamage" : 20,
+    "tickRate" : 1.0,
+    "tickDamage" : 6,
 
     "resistStat" : "fire",
-    "resistPerc" : 70
+    "resistPerc" : 0.30
   },
   "defaultDuration" : 1.0,
 
@@ -16,6 +16,6 @@
 
   "animationConfig" : "ce_biomeheat.animation",
 
-  "label" : "^red;70%^reset; Deadly Heat",
+  "label" : "^red;30%^reset; Deadly Heat",
   "icon" : "/interface/statuses/biomeheat.png"
 }
