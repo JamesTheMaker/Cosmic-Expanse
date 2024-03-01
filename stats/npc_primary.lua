@@ -1,6 +1,5 @@
 function init()
   self.damageFlashTime = 0
-  self.hitInvulnerabilityTime = 0
 
   message.setHandler("applyStatusEffect", function(_, _, effectConfig, duration, sourceEntityId)
       status.addEphemeralEffect(effectConfig, duration, sourceEntityId)
@@ -8,9 +7,7 @@ function init()
 end
 
 function applyDamageRequest(damageRequest)
-  if self.hitInvulnerabilityTime > 0 or world.getProperty("nonCombat") then
-    return {}
-  end
+  if world.getProperty("nonCombat") then return {} end
 
   local damage = 0
   if damageRequest.damageType == "Damage" or damageRequest.damageType == "Knockback" then
@@ -37,12 +34,6 @@ function applyDamageRequest(damageRequest)
   if healthLost > 0 and damageRequest.damageType ~= "Knockback" then
     status.modifyResource("health", -healthLost)
     self.damageFlashTime = 0.07
-    if status.statusProperty("hitInvulnerability") then
-      local damageHealthPercentage = healthLost / status.resourceMax("health")
-      if damageHealthPercentage > status.statusProperty("hitInvulnerabilityThreshold") then
-        self.hitInvulnerabilityTime = status.statusProperty("hitInvulnerabilityTime")
-      end
-    end
   end
 
   status.addEphemeralEffects(damageRequest.statusEffects, damageRequest.sourceEntityId)
@@ -97,21 +88,6 @@ function update(dt)
     status.setPrimaryDirectives()
   end
   self.damageFlashTime = math.max(0, self.damageFlashTime - dt)
-
-  if status.statusProperty("hitInvulnerability") then
-    self.hitInvulnerabilityTime = math.max(self.hitInvulnerabilityTime - dt, 0)
-    local flashTime = status.statusProperty("hitInvulnerabilityFlash")
-
-    if self.hitInvulnerabilityTime > 0 then
-      if math.fmod(self.hitInvulnerabilityTime, flashTime) > flashTime / 2 then
-        status.setPrimaryDirectives(status.statusProperty("damageFlashOffDirectives"))
-      else
-        status.setPrimaryDirectives(status.statusProperty("damageFlashOnDirectives"))
-      end
-    else
-      status.setPrimaryDirectives()
-    end
-  end
 
   if status.resource("energy") == 0 then
     status.setResourceLocked("energy", true)
