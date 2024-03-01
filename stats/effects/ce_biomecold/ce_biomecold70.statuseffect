@@ -5,7 +5,6 @@
       "tickRate" : 1.0,
       "tickDamage" : 12,
   
-      "resistStat" : "ice",
       "resistPerc" : 0.70
     },
     "defaultDuration" : 1.0,

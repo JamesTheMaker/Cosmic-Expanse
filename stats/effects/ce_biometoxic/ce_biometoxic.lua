@@ -19,7 +19,7 @@ end
 function update(dt)
     self.tickTimer = math.max(0, self.tickTimer - dt)
   
-    if self.tickTimer == 0 and status.stat(self.resistStat) < self.resistPerc then
+    if self.tickTimer == 0 and status.stat("poisonResistance") < self.resistPerc then
       -- animator.burstParticleEmitter("flames")
       self.tickTimer = self.tickRate
       status.applySelfDamageRequest({

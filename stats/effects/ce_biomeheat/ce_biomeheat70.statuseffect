@@ -4,8 +4,7 @@
   "effectConfig" : {
     "tickRate" : 1.0,
     "tickDamage" : 12,
-
-    "resistStat" : "fire",
+    
     "resistPerc" : 0.70
   },
   "defaultDuration" : 1.0,

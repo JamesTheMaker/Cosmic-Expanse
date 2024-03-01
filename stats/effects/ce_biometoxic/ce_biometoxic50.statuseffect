@@ -5,7 +5,6 @@
       "tickRate" : 1.0,
       "tickDamage" : 9,
   
-      "resistStat" : "poison",
       "resistPerc" : 0.50
     },
     "defaultDuration" : 1.0,

@@ -58,7 +58,7 @@ function applyDamageRequest(damageRequest)
 
   local hitType = damageRequest.hitType
   local elementalStat = root.elementalResistance(damageRequest.damageSourceKind)
-  local resistance = math.max(-1, -1 / (status.stat(elementalStat) + 1) + 1) -- (-1 / (x + 1)) + 1
+  local resistance = -1 / (math.max(0, status.stat(elementalStat)) + 1) + 1 -- (-1 / (x + 1)) + 1
   damage = damage - (resistance * damage)
   if resistance ~= 0 and damage > 0 then
     hitType = resistance > 0 and "weakhit" or "stronghit"
