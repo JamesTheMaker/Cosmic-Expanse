@@ -1,0 +1,43 @@
+{
+    "ce_lanamerchant" : [
+        [   
+            0,
+            [
+                // GUARANTEED
+                { "item" : { "name" : "fireblockaugment" }, "rarity" : 9999 },
+                { "item" : { "name" : "iceblockaugment" }, "rarity" : 9999 },
+                { "item" : { "name" : "electricblockaugment" }, "rarity" : 9999 },
+                { "item" : { "name" : "poisonblockaugment" }, "rarity" : 9999 },
+
+                // UNCOMMON
+                { "item" : { "name" : "damageaugment1" } },
+                { "item" : { "name" : "energyaugment1" } },
+                { "item" : { "name" : "healingaugment1" } },
+                { "item" : { "name" : "healthaugment1" } },
+                { "item" : { "name" : "lightaugment1" } },
+
+                // RARE
+                { "item" : { "name" : "damageaugment2" }  },
+                { "item" : { "name" : "energyaugment2" }  },
+                { "item" : { "name" : "healingaugment2" }  },
+                { "item" : { "name" : "healthaugment2" }  },
+                { "item" : { "name" : "lightaugment2" }  },
+
+                { "item" : { "name" : "gravityaugment" }  },
+                { "item" : { "name" : "jumpaugment" }  },
+                { "item" : { "name" : "speedaugment" }  },
+                { "item" : { "name" : "swimaugment" }  },
+
+                // LEGENDARY
+                { "item" : { "name" : "damageaugment3" } },
+                { "item" : { "name" : "energyaugment3" } },
+                { "item" : { "name" : "healingaugment3" } },
+                { "item" : { "name" : "healthaugment3" } },
+                { "item" : { "name" : "lightaugment3" } },
+
+                { "item" : { "name" : "thornsaugment" } },
+                { "item" : { "name" : "mobilityaugment" } }
+            ]
+        ]
+    ]
+}
