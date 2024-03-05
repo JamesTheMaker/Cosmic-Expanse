@@ -1,0 +1,9 @@
+[
+    { "op" : "replace", "path" : "/description", "value" : "This EPP has advanced cooling capabilities.\n\n^red;+60% Fire Resistance^reset;" },
+    { "op" : "replace", "path" : "/shortdescription", "value" : "Advanced Cooling EPP" },
+
+    { "op" : "remove", "path" : "/statusEffects", "find" : { "stat" : "biomecoldImmunity", "amount" : 1.0 } },
+    { "op" : "remove", "path" : "/statusEffects", "find" : { "stat" : "biomeradiationImmunity", "amount" : 1.0 } },
+    { "op" : "remove", "path" : "/statusEffects", "find" : { "stat" : "breathProtection", "amount" : 1.0 } },
+    { "op" : "add", "path" : "/statusEffects/-", "value" : { "stat" : "fireResistance", "amount" : 0.60 } }
+]

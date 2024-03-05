@@ -1,22 +1,22 @@
 {
-  "itemName" : "ce_advancedcoldprotectionback",
-  "price" : 1000,
-  "inventoryIcon" : "/items/armors/backitems/coldprotection/coldprotectionicon.png",
+  "itemName" : "ce_heatprotectionback",
+  "price" : 500,
+  "inventoryIcon" : "ce_heatprotectionicon.png",
   "tooltipKind" : "baseaugment",
-  "rarity" : "Legendary",
+  "rarity" : "Rare",
   "pickupQuestTemplates" : [ ],
   "category" : "enviroProtectionPack",
-  "description" : "This EPP has advanced heat generation capabilities.\n\n^blue;+60% Ice Resistance^reset;",
-  "shortdescription" : "Advanced Heating EPP",
+  "description" : "This EPP has basic cooling capabilities.\n\n^red;+30% Fire Resistance^reset;",
+  "shortdescription" : "Basic Cooling EPP",
 
-  "maleFrames" : "/items/armors/backitems/coldprotection/back.png",
-  "femaleFrames" : "/items/armors/backitems/coldprotection/back.png",
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png",
   "maxStack" : 1,
 
   "statusEffects" : [
     {
-      "stat" : "iceResistance",
-      "amount" : 0.60
+      "stat" : "fireResistance",
+      "amount" : 0.30
     }
   ],
 
@@ -24,8 +24,8 @@
   "radioMessagesOnPickup" : [ "pickupepp" ],
 
   "colorOptions" : [
-    // BLACK
-    { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
+    // WHITE
+    { "ffca8a" : "e6e6e6", "e0975c" : "b6b6b6", "a85636" : "7b7b7b", "6f2919" : "373737" },
     // BLACK
     { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
     // GREY

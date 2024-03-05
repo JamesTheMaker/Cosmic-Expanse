@@ -1,22 +1,22 @@
 {
-  "itemName" : "ce_advancedheatprotectionback",
-  "price" : 1000,
-  "inventoryIcon" : "/items/armors/backitems/heatprotection/heatprotectionicon.png",
+  "itemName" : "ce_coldprotectionback",
+  "price" : 500,
+  "inventoryIcon" : "ce_coldprotectionicon.png",
   "tooltipKind" : "baseaugment",
-  "rarity" : "Legendary",
+  "rarity" : "Rare",
   "pickupQuestTemplates" : [ ],
   "category" : "enviroProtectionPack",
-  "description" : "This EPP has advanced cooling capabilities.\n\n^red;+60% Fire Resistance^reset;",
-  "shortdescription" : "Advanced Cooling EPP",
+  "description" : "This EPP has basic heat generation capabilities.\n\n^blue;+30% Ice Resistance^reset;",
+  "shortdescription" : "Basic Heating EPP",
 
-  "maleFrames" : "/items/armors/backitems/heatprotection/back.png",
-  "femaleFrames" : "/items/armors/backitems/heatprotection/back.png",
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png",
   "maxStack" : 1,
 
   "statusEffects" : [
     {
-      "stat" : "fireResistance",
-      "amount" : 0.60
+      "stat" : "iceResistance",
+      "amount" : 0.30
     }
   ],
 
