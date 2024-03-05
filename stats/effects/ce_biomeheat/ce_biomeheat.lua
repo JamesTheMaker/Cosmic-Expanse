@@ -14,7 +14,9 @@ function init()
 
   self.tickTimer = self.tickRate
   
-  world.sendEntityMessage(entity.id(), "queueRadioMessage", "biomeheat", 5.0)
+  if status.stat("fireResistance") < self.resistPerc then
+    world.sendEntityMessage(entity.id(), "queueRadioMessage", "biomeheat", 5.0)
+  end
 end
 
 function update(dt)
@@ -24,11 +26,11 @@ function update(dt)
     animator.burstParticleEmitter("flames")
     self.tickTimer = self.tickRate
     status.applySelfDamageRequest({
-        damageType = "IgnoresDef",
-        damage = self.tickDamage,
-        damageSourceKind = "fire",
-        sourceEntityId = entity.id()
-      })
+      damageType = "IgnoresDef",
+      damage = self.tickDamage,
+      damageSourceKind = "fire",
+      sourceEntityId = entity.id()
+    })
   end
 end
 

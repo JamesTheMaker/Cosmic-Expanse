@@ -12,20 +12,22 @@ function init()
   
     self.tickTimer = self.tickRate
     
-    world.sendEntityMessage(entity.id(), "queueRadioMessage", "biomecold", 5.0)
+    if status.stat("iceResistance") < self.resistPerc then
+        world.sendEntityMessage(entity.id(), "queueRadioMessage", "biomecold", 5.0)
+    end
 end
 
 function update(dt)
     self.tickTimer = math.max(0, self.tickTimer - dt)
   
     if self.tickTimer == 0 and status.stat("iceResistance") < self.resistPerc then
-      -- animator.burstParticleEmitter("flames")
-      self.tickTimer = self.tickRate
-      status.applySelfDamageRequest({
-          damageType = "IgnoresDef",
-          damage = self.tickDamage,
-          damageSourceKind = "ice",
-          sourceEntityId = entity.id()
+        -- animator.burstParticleEmitter("flames")
+        self.tickTimer = self.tickRate
+        status.applySelfDamageRequest({
+            damageType = "IgnoresDef",
+            damage = self.tickDamage,
+            damageSourceKind = "ice",
+            sourceEntityId = entity.id()
         })
     end
 end
