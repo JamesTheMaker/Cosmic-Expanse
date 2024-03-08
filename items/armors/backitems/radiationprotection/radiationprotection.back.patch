@@ -4,6 +4,6 @@
     { "op" : "replace", "path" : "/description", "value" : "This EPP has advanced toxicity neutralisation capabilities.\n\n^green;+60% Poison Resistance^reset;" },
     { "op" : "replace", "path" : "/shortdescription", "value" : "Advanced Toxicity EPP" },
 
-    { "op" : "remove", "path" : "/statusEffects", "find" : { "stat" : "breathProtection", "amount" : 1.0 } },
+    { "op" : "remove", "path" : "/statusEffects", "search" : { "stat" : "breathProtection" } },
     { "op" : "add", "path" : "/statusEffects/-", "value" : { "stat" : "poisonResistance", "amount" : 0.60 } }
 ]

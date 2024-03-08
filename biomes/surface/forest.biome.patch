@@ -4,7 +4,7 @@
         { "op" : "add", "path" : "/statusEffects", "value" : [] }
     ],
     [
-        { "op" : "remove", "path" : "/statusEffects", "find" : "biomeradiation" },
+        { "op" : "remove", "path" : "/statusEffects", "search" : "biomeradiation" },
         { "op" : "add", "path" : "/statusEffects/-", "value" : "ce_biometoxic10" }
     ]
 ]

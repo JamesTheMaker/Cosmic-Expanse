@@ -3,7 +3,7 @@
     { "op" : "replace", "path" : "/description", "value" : "This EPP has advanced heat generation capabilities.\n\n^blue;+60% Ice Resistance^reset;" },
     { "op" : "replace", "path" : "/shortdescription", "value" : "Advanced Heating EPP" },
 
-    { "op" : "remove", "path" : "/statusEffects", "find" : { "stat" : "biomeradiationImmunity", "amount" : 1.0 } },
-    { "op" : "remove", "path" : "/statusEffects", "find" : { "stat" : "breathProtection", "amount" : 1.0 } },
+    { "op" : "remove", "path" : "/statusEffects", "search" : { "stat" : "biomeradiationImmunity" } },
+    { "op" : "remove", "path" : "/statusEffects", "search" : { "stat" : "breathProtection" } },
     { "op" : "add", "path" : "/statusEffects/-", "value" : { "stat" : "iceResistance", "amount" : 0.60 } }
 ]
