@@ -3,5 +3,5 @@
     { "op" : "replace", "path" : "/starTypeNames/orangestar", "value" : "Gentle Star" },
     { "op" : "replace", "path" : "/starTypeNames/yellowstar", "value" : "Temperate Star" },
     { "op" : "replace", "path" : "/starTypeNames/bluestar", "value" : "Severe Star" },
-    { "op" : "replace", "path" : "/starTypeNames/redstar", "value" : "Dwarf Star" }
+    { "op" : "replace", "path" : "/starTypeNames/redstar", "value" : "Faint Star" }
 ]

@@ -1,5 +1,0 @@
-[
-    { "op" : "test", "path" : "/backdropImages/1" },
-
-    { "op" : "replace", "path" : "/backdropImages/1", "value" : [ [0, -32], "/interface/title/xsberror.png", 0.5 ] }
-]
