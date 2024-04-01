@@ -15,6 +15,6 @@
 
   "animationConfig" : "ce_biomeheat.animation",
 
-  "label" : "^red;30%^reset; Deadly Heat",
+  "label" : "Deadly Heat ^red;30%^reset;",
   "icon" : "/interface/statuses/biomeheat.png"
 }

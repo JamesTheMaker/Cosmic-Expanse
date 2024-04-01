@@ -1,0 +1,17 @@
+{
+    "itemName" : "ce_coldpack",
+    "price" : 50,
+    "rarity" : "Uncommon",
+    "category" : "medicine",
+    "inventoryIcon" : "ce_coldpack.png",
+    "description" : "Use it to cool yourself down. Provides 10 percent fire resistance.",
+    "shortdescription" : "Cold Pack",
+    "effects" : [ 
+        [ "ce_coldpack" ]
+    ],
+    "blockingEffects" : [ 
+        "ce_coldpack"
+    ],
+    "emote" : "",
+    "emitters" : []
+}

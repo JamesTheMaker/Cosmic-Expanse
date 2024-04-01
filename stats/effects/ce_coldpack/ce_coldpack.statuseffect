@@ -1,0 +1,12 @@
+{
+  "name" : "ce_coldpack",
+  "effectConfig" : {},
+  "defaultDuration" : 300,
+
+  "scripts" : [
+    "ce_coldpack.lua"
+  ],
+
+  "label" : "Cold Pack ^red;+10%^reset;",
+  "icon" : "/items/generic/other/ce_coldpack.png"
+}

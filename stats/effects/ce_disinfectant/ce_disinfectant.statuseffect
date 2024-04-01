@@ -1,0 +1,12 @@
+{
+  "name" : "ce_disinfectant",
+  "effectConfig" : {},
+  "defaultDuration" : 300,
+
+  "scripts" : [
+    "ce_disinfectant.lua"
+  ],
+
+  "label" : "Disinfectant ^green;+10%^reset;",
+  "icon" : "/items/generic/other/ce_disinfectant.png"
+}

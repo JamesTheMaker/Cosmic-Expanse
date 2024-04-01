@@ -5,8 +5,12 @@ function init()
   self.lastYPosition = 0
   self.lastYVelocity = 0
   self.fallDistance = 0
+  self.hitInvulnerabilityTime = 0
+  self.shieldHitInvulnerabilityTime = 0
   self.suffocateSoundTimer = 0
   self.ouchCooldown = 0
+
+  self.removeOnDamage = root.assetJson("/statuseffects.config").removeOnDamage
 
   local ouchNoise = status.statusProperty("ouchNoise")
   if ouchNoise then
@@ -53,7 +57,10 @@ function applyDamageRequest(damageRequest)
     return {}
   end
 
-  if world.getProperty("nonCombat") then return {} end
+  local hitInvulnerability = self.hitInvulnerabilityTime > 0 and damageRequest.damageSourceKind ~= "applystatus"
+  if damageRequest.damageSourceKind ~= "falling" and (hitInvulnerability or world.getProperty("nonCombat")) then
+    return {}
+  end
 
   status.addEphemeralEffects(damageRequest.statusEffects, damageRequest.sourceEntityId)
   if damageRequest.damageSourceKind == "applystatus" then
@@ -78,7 +85,15 @@ function applyDamageRequest(damageRequest)
   end
 
   if damageRequest.hitType == "ShieldHit" then
-    status.modifyResource("shieldStamina", -damage / status.stat("shieldHealth"))
+    if self.shieldHitInvulnerabilityTime == 0 then
+      local preShieldDamageHealthPercentage = damage / status.resourceMax("health")
+      self.shieldHitInvulnerabilityTime = status.statusProperty("shieldHitInvulnerabilityTime") * math.min(preShieldDamageHealthPercentage, 1.0)
+
+      if not status.resourcePositive("perfectBlock") then
+        status.modifyResource("shieldStamina", -damage / status.stat("shieldHealth"))
+      end
+    end
+
     status.setResourcePercentage("shieldStaminaRegenBlock", 1.0)
     damage = 0
     damageRequest.statusEffects = {}
@@ -95,6 +110,16 @@ function applyDamageRequest(damageRequest)
     if self.ouchCooldown <= 0 then
       animator.playSound("ouch")
       self.ouchCooldown = 0.5
+    end
+
+    local damageHealthPercentage = damage / status.resourceMax("health")
+    if damageHealthPercentage > status.statusProperty("hitInvulnerabilityThreshold") then
+      self.hitInvulnerabilityTime = status.statusProperty("hitInvulnerabilityTime")
+    end
+    for _, effect in ipairs(self.removeOnDamage) do
+      if healthLost >= effect.damThreshold and damageHealthPercentage >= effect.percThreshold then
+        status.removeEphemeralEffect(effect.name)
+      end
     end
   end
 
@@ -181,6 +206,19 @@ function update(dt)
     self.suffocateSoundTimer = 0
   end
 
+  self.hitInvulnerabilityTime = math.max(self.hitInvulnerabilityTime - dt, 0)
+  local flashTime = status.statusProperty("hitInvulnerabilityFlash")
+
+  if self.hitInvulnerabilityTime > 0 then
+    if math.fmod(self.hitInvulnerabilityTime, flashTime) > flashTime / 2 then
+      status.setPrimaryDirectives(status.statusProperty("damageFlashOffDirectives"))
+    else
+      status.setPrimaryDirectives(status.statusProperty("damageFlashOnDirectives"))
+    end
+  else
+    status.setPrimaryDirectives()
+  end
+
   if status.resourceLocked("energy") and status.resourcePercentage("energy") == 1 then
     animator.playSound("energyRegenDone")
   end
@@ -200,6 +238,7 @@ function update(dt)
     status.modifyResourcePercentage("energy", status.stat("energyRegenPercentageRate") * dt)
   end
 
+  self.shieldHitInvulnerabilityTime = math.max(self.shieldHitInvulnerabilityTime - dt, 0)
   if not status.resourcePositive("shieldStaminaRegenBlock") then
     status.modifyResourcePercentage("shieldStamina", status.stat("shieldStaminaRegen") * dt)
     status.modifyResourcePercentage("perfectBlockLimit", status.stat("perfectBlockLimitRegen") * dt)

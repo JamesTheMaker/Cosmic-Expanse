@@ -15,7 +15,7 @@
   
     "animationConfig" : "ce_biometoxic.animation",
   
-    "label" : "^green;30%^reset; Deadly Toxicity",
+    "label" : "Deadly Toxicity ^green;30%^reset;",
     "icon" : "/interface/statuses/biomeradioactive.png"
   }
   

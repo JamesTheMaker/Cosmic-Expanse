@@ -5,6 +5,8 @@ require "/scripts/status.lua"
 function init()
   self.damageFlashTime = 0
 
+  self.removeOnDamage = root.assetJson("/statuseffects.config").removeOnDamage
+
   message.setHandler("applyStatusEffect", function(_, _, effectConfig, duration, sourceEntityId)
       status.addEphemeralEffect(effectConfig, duration, sourceEntityId)
     end)
@@ -76,6 +78,13 @@ function applyDamageRequest(damageRequest)
     else
       self.damageFlashTime = 0.07
       self.damageFlashType = "default"
+    end
+    
+    local damageHealthPercentage = damage / status.resourceMax("health")
+    for _, effect in ipairs(self.removeOnDamage) do
+      if healthLost >= effect.damThreshold and damageHealthPercentage >= effect.percThreshold then
+        status.removeEphemeralEffect(effect.name)
+      end
     end
   end
 

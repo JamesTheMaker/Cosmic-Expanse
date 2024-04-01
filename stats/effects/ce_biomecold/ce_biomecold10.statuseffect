@@ -15,7 +15,7 @@
   
     "animationConfig" : "ce_biomecold.animation",
   
-    "label" : "^blue;10%^reset; Deadly Chill",
+    "label" : "Deadly Chill ^blue;10%^reset;",
     "icon" : "/interface/statuses/biomecold.png"
   }
   

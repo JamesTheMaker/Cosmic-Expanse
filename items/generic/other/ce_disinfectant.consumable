@@ -1,0 +1,17 @@
+{
+    "itemName" : "ce_disinfectant",
+    "price" : 50,
+    "rarity" : "Uncommon",
+    "category" : "medicine",
+    "inventoryIcon" : "ce_disinfectant.png",
+    "description" : "Kills 99% of the germs! Provides 10 percent poison resistance.",
+    "shortdescription" : "Disinfectant",
+    "effects" : [ 
+        [ "ce_disinfectant" ]
+    ],
+    "blockingEffects" : [ 
+        "ce_disinfectant"
+    ],
+    "emote" : "",
+    "emitters" : []
+}
