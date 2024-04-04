@@ -6,7 +6,7 @@
   "rarity" : "Rare",
   "pickupQuestTemplates" : [ ],
   "category" : "enviroProtectionPack",
-  "description" : "This EPP has basic cooling capabilities.\n\n^red;+30% Fire Resistance^reset;",
+  "description" : "This EPP has basic cooling capabilities. Provides 30 percent fire resistance.",
   "shortdescription" : "Basic Cooling EPP",
 
   "maleFrames" : "back.png",

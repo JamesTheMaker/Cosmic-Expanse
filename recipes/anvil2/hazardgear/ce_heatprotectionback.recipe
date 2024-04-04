@@ -1,0 +1,7 @@
+{
+    "input" : [
+        { "item" : "money", "count" : 1 }
+    ],
+    "output" : { "item" : "ce_heatprotectionback", "count" : 1 },
+    "groups" : [ "craftinganvil2", "hazardgear", "all" ]
+}

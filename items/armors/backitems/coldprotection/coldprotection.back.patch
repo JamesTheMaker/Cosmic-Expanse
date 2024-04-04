@@ -1,6 +1,6 @@
 [
     { "op" : "replace", "path" : "/rarity", "value" : "Legendary" },
-    { "op" : "replace", "path" : "/description", "value" : "This EPP has advanced heat generation capabilities.\n\n^blue;+60% Ice Resistance^reset;" },
+    { "op" : "replace", "path" : "/description", "value" : "This EPP has advanced heat generation capabilities. Provides 60 percent ice resistance." },
     { "op" : "replace", "path" : "/shortdescription", "value" : "Advanced Heating EPP" },
 
     { "op" : "remove", "path" : "/statusEffects", "search" : { "stat" : "biomeradiationImmunity" } },

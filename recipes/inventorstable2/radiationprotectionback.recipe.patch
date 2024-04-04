@@ -1,0 +1,3 @@
+[
+    { "op" : "replace", "path" : "/groups", "search" : "craftinganvil2", "value" : "craftinganvil3" }
+]

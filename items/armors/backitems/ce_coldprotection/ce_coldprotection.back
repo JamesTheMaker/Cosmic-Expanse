@@ -6,7 +6,7 @@
   "rarity" : "Rare",
   "pickupQuestTemplates" : [ ],
   "category" : "enviroProtectionPack",
-  "description" : "This EPP has basic heat generation capabilities.\n\n^blue;+30% Ice Resistance^reset;",
+  "description" : "This EPP has basic heat generation capabilities. Provides 30 percent ice resistance.",
   "shortdescription" : "Basic Heating EPP",
 
   "maleFrames" : "back.png",

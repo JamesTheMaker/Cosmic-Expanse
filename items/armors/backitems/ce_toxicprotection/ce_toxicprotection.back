@@ -6,7 +6,7 @@
   "rarity" : "Rare",
   "pickupQuestTemplates" : [ ],
   "category" : "enviroProtectionPack",
-  "description" : "This EPP has basic toxicity neutralisation capabilities.\n\n^green;+30% Poison Resistance^reset;",
+  "description" : "This EPP has basic toxicity neutralisation capabilities. Provides 30 percent poison resistance.",
   "shortdescription" : "Basic Toxicity EPP",
 
   "maleFrames" : "back.png",
