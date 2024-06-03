@@ -1,4 +1,0 @@
-[
-    { "op" : "replace", "path" : "/scriptConfig/merchant/categories/human/0", "value" : "ce_lanamerchant" },
-    { "op" : "replace", "path" : "/scriptConfig/merchant/numItems", "value" : 5 }
-]
