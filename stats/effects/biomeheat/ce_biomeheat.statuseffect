@@ -4,7 +4,7 @@
   
     "effectConfig" : {
       "tickRate" : 0.5,
-      "tickDamage" : 5
+      "tickDamage" : 3
     },
     "defaultDuration" : 1.0,
   
