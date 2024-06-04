@@ -1,29 +1,21 @@
-Gentle Star (0%):
+Gentle Star:
  - Garden
-Gentle Star (10%):
  - Savannah
  - Forest
  - Ocean
-Temperate Star (30%):
+Temperate Star:
  - Desert
- - Swamp
+ - Swamp (New)
  - Snow
-Risky Star (50%):
+Risky Star:
  - Decayed
  - Jungle
  - Tundra
-Severe Star (70%):
+Severe Star:
  - Volcanic
  - Mutated
  - Arctic
-Dwarf Star (90%):
+Dwarf Star:
  - Magma
  - Toxic
  - Midnight
-
-EPPs will be split into two tiers:
-Basic - Gives 30% resistance
-Advanced - Gives 60% resistance
-
-There will also be a consumable which gives 10% resistance to their respective element
-Combine this with Augment resistances, it will be possible to achieve up to 95% resistance to an element
