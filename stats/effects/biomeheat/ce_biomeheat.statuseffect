@@ -1,0 +1,20 @@
+{
+    "name" : "ce_biomeheat",
+    "blockingStat" : "biomeheatImmunity",
+  
+    "effectConfig" : {
+      "tickRate" : 0.5,
+      "tickDamage" : 5
+    },
+    "defaultDuration" : 1.0,
+  
+    "scripts" : [
+      "biomeheat.lua"
+    ],
+  
+    "animationConfig" : "biomeheat.animation",
+  
+    "label" : "Hazardous Heat",
+    "icon" : "/interface/statuses/biomeheat.png"
+  }
+  
