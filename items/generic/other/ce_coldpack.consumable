@@ -4,7 +4,7 @@
     "rarity" : "Uncommon",
     "category" : "medicine",
     "inventoryIcon" : "ce_coldpack.png",
-    "description" : "Use it to cool yourself down. Provides 10 percent fire resistance.",
+    "description" : "Use it to cool yourself down. Provides temporary resistance on ^red;dangerously hot^reset; planets.",
     "shortdescription" : "Cold Pack",
     "effects" : [ 
         [ "ce_coldpack" ]

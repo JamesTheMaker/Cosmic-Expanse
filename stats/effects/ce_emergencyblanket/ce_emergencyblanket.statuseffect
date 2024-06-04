@@ -7,6 +7,6 @@
     "ce_emergencyblanket.lua"
   ],
 
-  "label" : "Emergency Blanket ^blue;+10%^reset;",
+  "label" : "Emergency Blanket",
   "icon" : "/items/generic/other/ce_emergencyblanket.png"
 }
