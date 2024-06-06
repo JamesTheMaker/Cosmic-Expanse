@@ -101,7 +101,7 @@ function applyDamageRequest(damageRequest)
   end
 
   local elementalStat = root.elementalResistance(damageRequest.damageSourceKind)
-  local resistance = -1 / (math.max(0, status.stat(elementalStat)) + 1) + 1 -- (-1 / (x + 1)) + 1
+  local resistance = status.stat(elementalStat)
   damage = damage - (resistance * damage)
 
   local healthLost = math.min(damage, status.resource("health"))
