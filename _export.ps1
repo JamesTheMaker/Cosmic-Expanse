@@ -3,8 +3,8 @@ Param(
     $Path
 )
 
-$cePath = Join-Path -Path (Get-Location) -ChildPath "\*"
-Write-Host "Current path is: $($cePath)"
+$modPath = Join-Path -Path (Get-Location) -ChildPath "\*"
+Write-Host "Current path is: $($modPath)"
 
 Try {
     if (Test-Path -Path $Path) {
@@ -14,14 +14,14 @@ Try {
     Write-Error "Something went wrong: $($_.exception.message)"
 } Finally {
     Try {
-        New-Item -Path $Path -ItemType Directory
+        New-Item -Path $Path -ItemType Directory -Force
     } Catch {
         Write-Error "Something went wrong: $($_.exception.message)"
     }
 }
 
 Try {
-    Copy-Item -Path $cePath -Destination $Path -Recurse
+    Copy-Item -Path $modPath -Destination $Path -Recurse
 
     Remove-Item -Path (Join-Path -Path $Path -ChildPath "\.git\") -Recurse
     Remove-Item -Path (Join-Path -Path $Path -ChildPath "\_export.ps1")
