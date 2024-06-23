@@ -1,5 +1,7 @@
 [
     // defaultBlueprints
+    { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_remoteteleporter" },
+
     { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "orangestim" },
 
     { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_coldpack" },
