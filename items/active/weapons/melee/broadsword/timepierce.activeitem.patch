@@ -1,0 +1,3 @@
+[
+    { "op" : "add", "path" : "/ability/stances/idle/aimAngle", "value" : 0 }
+]
