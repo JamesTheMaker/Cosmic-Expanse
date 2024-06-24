@@ -24,7 +24,9 @@ Try {
   Copy-Item -Path $modPath -Destination $Path -Recurse -Force
 
   Remove-Item -Path (Join-Path -Path $Path -ChildPath "\.git\") -Recurse
+  Remove-Item -Path (Join-Path -Path $Path -ChildPath "\art\") -Recurse
   Remove-Item -Path (Join-Path -Path $Path -ChildPath "\_export.ps1")
+  Remove-Item -Path (Join-Path -Path $Path -ChildPath "\.editorconfig")
 } Catch {
   Write-Error "Something went wrong: $($_.exception.message)"
 
