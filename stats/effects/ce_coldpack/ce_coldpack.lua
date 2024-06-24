@@ -1,7 +1,7 @@
 function init()
-    effect.addStatModifierGroup({{stat = "biomeheatImmunity", amount = 1}})
+  effect.addStatModifierGroup({{stat = "biomeheatImmunity", amount = 1}})
 
-    script.setUpdateDelta(0)
+  script.setUpdateDelta(0)
 end
 
 function update(dt) end

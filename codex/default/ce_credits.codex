@@ -1,9 +1,9 @@
 {
-    "id" : "ce_credits",
-    "title" : "^magenta;Cosmic Expanse^reset; - Credits",
-    "description" : "A list of credits for Cosmic Expanse.",
-    "icon" : "ce_guidecover.png",
-    "contentPages" : [
+  "id" : "ce_credits",
+  "title" : "^magenta;Cosmic Expanse^reset; - Credits",
+  "description" : "A list of credits for Cosmic Expanse.",
+  "icon" : "ce_guidecover.png",
+  "contentPages" : [
 
 "Welcome to Cosmic Expanse! This ambitious project aims to completely overhaul Starbound and unlock it's true potential. This cannot be completed alone, however, so here is a list of every known contributor and their role in the mod's development:
 
@@ -13,9 +13,9 @@ Roll'eG - Sprite artist
 Stranger Danger - Ideas guy
 mailboxmacneil - Mascot"
 
-    ],
-    "itemConfig" : {
-        "rarity" : "essential",
-        "price" : 69
-    }
+  ],
+  "itemConfig" : {
+    "rarity" : "essential",
+    "price" : 69
+  }
 }

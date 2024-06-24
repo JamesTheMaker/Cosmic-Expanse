@@ -1,34 +1,34 @@
 Param(
-    [Parameter(Mandatory, HelpMessage = "Please provide a valid path")]
-    $Path
+  [Parameter(Mandatory, HelpMessage = "Please provide a valid path")]
+  $Path
 )
 
 $modPath = Join-Path -Path (Get-Location) -ChildPath "\*"
 Write-Host "Current path is: $($modPath)"
 
 Try {
-    if (Test-Path -Path $Path) {
-        Remove-Item -Path $Path -Recurse -Force
-    }
+  if (Test-Path -Path $Path) {
+    Remove-Item -Path $Path -Recurse -Force
+  }
 } Catch {
-    Write-Error "Something went wrong: $($_.exception.message)"
+  Write-Error "Something went wrong: $($_.exception.message)"
 } Finally {
-    Try {
-        New-Item -Path $Path -ItemType Directory
-    } Catch {
-        Write-Error "Something went wrong: $($_.exception.message)"
-    }
+  Try {
+    New-Item -Path $Path -ItemType Directory
+  } Catch {
+    Write-Error "Something went wrong: $($_.exception.message)"
+  }
 }
 
 Try {
-    Copy-Item -Path $modPath -Destination $Path -Recurse -Force
+  Copy-Item -Path $modPath -Destination $Path -Recurse -Force
 
-    Remove-Item -Path (Join-Path -Path $Path -ChildPath "\.git\") -Recurse
-    Remove-Item -Path (Join-Path -Path $Path -ChildPath "\_export.ps1")
+  Remove-Item -Path (Join-Path -Path $Path -ChildPath "\.git\") -Recurse
+  Remove-Item -Path (Join-Path -Path $Path -ChildPath "\_export.ps1")
 } Catch {
-    Write-Error "Something went wrong: $($_.exception.message)"
+  Write-Error "Something went wrong: $($_.exception.message)"
 
-    if (Test-Path -Path $Path) {
-        Remove-Item -Path $Path -Recurse
-    }
+  if (Test-Path -Path $Path) {
+    Remove-Item -Path $Path -Recurse
+  }
 }

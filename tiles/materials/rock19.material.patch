@@ -1,3 +1,3 @@
 [
-    { "op" : "replace", "path" : "/itemDrop", "value" : "rock19" }
+  { "op" : "replace", "path" : "/itemDrop", "value" : "rock19" }
 ]
