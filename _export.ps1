@@ -27,10 +27,11 @@ Try {
   Remove-Item -Path (Join-Path -Path $Path -ChildPath "\art\") -Recurse
   Remove-Item -Path (Join-Path -Path $Path -ChildPath "\_export.ps1")
   Remove-Item -Path (Join-Path -Path $Path -ChildPath "\.editorconfig")
+  Remove-Item -Path (Join-Path -Path $Path -ChildPath "\README.md")
 } Catch {
   Write-Error "Something went wrong: $($_.exception.message)"
 
   if (Test-Path -Path $Path) {
-    Remove-Item -Path $Path -Recurse
+    Remove-Item -Path $Path -Recurse -Force
   }
 }
