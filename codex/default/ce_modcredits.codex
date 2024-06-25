@@ -1,8 +1,8 @@
 {
-  "id" : "ce_credits",
+  "id" : "ce_modcredits",
   "title" : "^magenta;Cosmic Expanse^reset; - Credits",
   "description" : "A list of credits for Cosmic Expanse.",
-  "icon" : "ce_guidecover.png",
+  "icon" : "ce_modcredits.png",
   "contentPages" : [
 
 "Welcome to Cosmic Expanse! This ambitious project aims to completely overhaul Starbound and unlock it's true potential. This cannot be completed alone, however, so here is a list of every known contributor and their role in the mod's development:
