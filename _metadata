@@ -2,5 +2,7 @@
   "author" : "JamesTheMaker",
   "description" : "null",
   "friendlyName" : "Cosmic Expanse",
-  "name" : "cosmicexpanse"
+  "includes" : [ "communityframework", "vanillauienhanced" ],
+  "name" : "cosmicexpanse",
+  "priority" : -9999
 }
