@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "manipulatormodule", "count" : 1 },
+    { "item" : "tungstenbar", "count" : 10 }
+  ],
+  "output" : {
+    "item" : "ce_upgradetungsten",
+    "count" : 1
+  },
+  "duration" : 10,
+  "groups" : [ "inventorstable", "ce_mmupgrades", "all" ]
+}

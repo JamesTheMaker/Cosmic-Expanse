@@ -2,13 +2,18 @@
   // defaultBlueprints
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_remoteteleporter" },
 
-  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "orangestim" },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_leadbar" },
 
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_upgradeiron" },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_upgradetungsten" },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_upgradetitanium" },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_upgradedurasteel" },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_upgradeelemental" },
+
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "orangestim" },
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_coldpack" },
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_emergencyblanket" },
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_leadblanket" },
-
-  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_leadbar" },
 
   // defaultCodexes
   { "op" : "add", "path" : "/defaultCodexes/glitch/-", "value" : "ce_protectoratecodex3" },
