@@ -8,7 +8,7 @@
   "description" : "Upgrades your Matter Manipulator to mine solarium.",
   "shortdescription" : "^orange;Elemental MM Upgrade^reset;",
 
-  "inventoryIcon" : "/art/placeholder.png",
+  "inventoryIcon" : "ce_mmupgradeelemental.png",
   "scripts" : [ "ce_mmupgrader.lua" ],
 
   "upgrades" : {

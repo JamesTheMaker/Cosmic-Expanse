@@ -8,7 +8,7 @@
   "description" : "Upgrades your Matter Manipulator to mine durasteel.",
   "shortdescription" : "^orange;Titanium MM Upgrade^reset;",
 
-  "inventoryIcon" : "/art/placeholder.png",
+  "inventoryIcon" : "ce_mmupgradetitanium.png",
   "scripts" : [ "ce_mmupgrader.lua" ],
 
   "upgrades" : {

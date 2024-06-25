@@ -4,11 +4,11 @@
 
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_leadbar" },
 
-  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_upgradeiron" },
-  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_upgradetungsten" },
-  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_upgradetitanium" },
-  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_upgradedurasteel" },
-  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_upgradeelemental" },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_mmupgradeiron" },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_mmupgradetungsten" },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_mmupgradetitanium" },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_mmupgradedurasteel" },
+  { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_mmupgradeelemental" },
 
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "orangestim" },
   { "op" : "add", "path" : "/defaultBlueprints/tier1/-", "value" : "ce_coldpack" },

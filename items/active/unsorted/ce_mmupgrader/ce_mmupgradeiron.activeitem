@@ -8,7 +8,7 @@
   "description" : "Upgrades your Matter Manipulator to mine tungsten.",
   "shortdescription" : "^orange;Iron MM Upgrade^reset;",
 
-  "inventoryIcon" : "/art/placeholder.png",
+  "inventoryIcon" : "ce_mmupgradeiron.png",
   "scripts" : [ "ce_mmupgrader.lua" ],
 
   "upgrades" : {
