@@ -1,0 +1,17 @@
+{
+  "itemName" : "ce_upgradeiron",
+  "price" : 0,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "category" : "upgradeComponent",
+  "description" : "Upgrades your Matter Manipulator to mine tungsten.",
+  "shortdescription" : "Iron MM Upgrade",
+
+  "inventoryIcon" : "/art/placeholder.png",
+  "scripts" : [ "ce_mmupgrader.lua" ],
+
+  "upgrades" : {
+    "harvestLevel" : 2
+  }
+}
